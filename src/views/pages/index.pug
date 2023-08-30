@@ -1,0 +1,107 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .main-pg.pg-wrapper
+        section.main-form
+            ._container.container
+                ._inner
+                    ._content
+                        h1._title.h1
+                            span.txt-green.w-stars Минимальная цена
+                                +icon('star')
+                                +icon('star')
+                            <br>
+                            | на&nbsp;помощь с&nbsp;написанием студенческих работ
+                        ._text Курсовые, дипломные, практические задания и&nbsp;другие работы
+                        form._form
+                            ._form-items-wrapper.form-items-wrapper
+                                ._form-item.form-item.form-item--50.w-shadow
+                                    input(type="text" placeholder="E-mail").common-input
+                                ._form-item.form-item.form-item--50.w-shadow
+                                    select(name="type_work").js-search-select.js-input-required
+                                        option(value="") Тип работы
+                                        option(value="dissertatsija") Диссертация
+                                        option(value="diplom") Диплом
+                                        option(value="refer") Реферат
+                            button(type="submit")._submit-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                            ._sticker.w-shadow
+                                ._sticker-body
+                                    +icon('lightning')
+                                    | Кешбэк 10%
+                    ._img
+                        +pictureAdaptive('main-form', 'png', 512, 602, 599)
+            ._bg.grid-bg
+                +pictureAdaptive('main-grid', 'png', 1920, 801, 479)
+        section.lead-magnet.-summer
+            ._container.container
+                ._inner
+                    ._content
+                        h2._title.h2 Летом самые низкие цены
+                        a(href="#")._btn.common-btn.common-btn--pink.w-shadow
+                            .common-btn__body Заказать
+                    ._bg.grid-bg
+                        +pictureAdaptive('main-banner-bg', 'png', 1217, 282, 767)
+                    ._abs-img.-one.abs-img
+                        +picture('main-banner-summer1', 'png', 163, 173)
+                    ._abs-img.-two.abs-img
+                        +icon('mb-arrow')
+                    ._abs-img.-three.abs-img
+                        +picture('main-banner-summer3', 'png', 163, 134)
+                    ._abs-img.-four.abs-img
+                        +picture('main-banner-summer4', 'png', 322, 229)
+                    ._abs-img.-five.abs-img
+                        +picture('main-banner-summer5', 'png', 137, 137)
+        section.steps
+            ._container.container
+                ._items
+                    ._item.w-shadow
+                        ._item-content
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Подберём лучшего исполнителя по&nbsp;вашему предмету
+                            ._item-text Вам&nbsp;не&nbsp;придётся заниматься поиском автора и&nbsp;обсуждением деталей заказа.
+                        ._item-img
+                            +pictureAdaptive('steps1', 'png', 185, 185, 479)
+                    ._item.w-shadow
+                        ._item-content
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Проконтролируем автора по&nbsp;срокам и&nbsp;качеству
+                            ._item-text Наш&nbsp;отдел качества проверит заказ на&nbsp;соответствие требованиям и&nbsp;МУ.
+                        ._item-img
+                            +pictureAdaptive('steps2', 'png', 185, 185, 479)
+                        ._item-shadow
+                    ._item.w-shadow
+                        ._item-content
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Не&nbsp;знаете с&nbsp;чего начать?
+                            ._item-text Выполним план к&nbsp;вашей работе бесплатно, после&nbsp;согласования приступим к&nbsp;выполнению работы.
+                        ._item-img
+                            +pictureAdaptive('steps3', 'png', 185, 185, 479)
+                        ._item-shadow
+                    ._item.w-shadow
+                        ._item-content
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Хотите проконтролировать ход&nbsp;написания работы?
+                            ._item-text Выдадим работу по&nbsp;главам, после&nbsp;согласования приступим к&nbsp;следующей.
+                        ._item-img
+                            +pictureAdaptive('steps4', 'png', 185, 185, 479)
+                        ._item-shadow
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
+
+block footer
+    include ../components/footer
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+header.header
+    ._container.container
+        ._inner
+            a(href="/")._logo-wrapper
+                +icon('logo')
+                ._descriptor by work5
+            nav._nav-menu
+                ._nav-menu-item
+                    a(href="#")._nav-menu-item-link Услуги
+                ._nav-menu-item.-dropdown
+                    a(href="#")._nav-menu-item-link О компании
+                    ._nav-menu-dropdown
+                        nav._dropdown-menu
+                         a(href="#")._dropdown-menu-item Раздел
+                         a(href="#")._dropdown-menu-item Длинный раздел
+                         a(href="#")._dropdown-menu-item Очень длинный раздел
+                         a(href="#")._dropdown-menu-item Очень длинный раздел
+                ._nav-menu-item
+                    a(href="#")._nav-menu-item-link Отзывы
+            ._contacts-box
+                a(href="tel:+77079509026")._phone +7 707 950 90 26
+                a(href="mailto:denis54321@gmail.com")._mail denis54321@gmail.com
+            a(href="#")._order-btn.common-btn.common-btn--pink.w-shadow
+                .common-btn__body Заказать
+            ._mobile-menu-toggle
+                +icon('burger')

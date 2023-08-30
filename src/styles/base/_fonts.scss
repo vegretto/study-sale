@@ -1,0 +1,39 @@
+//===========//
+//MIXIN FONTS
+//===========//
+@mixin font-face($name, $certain-name, $path, $weight: null, $style: null, $exts: woff2 woff) {
+
+  $src: local(quote($certain-name));
+
+  $extmods: (
+          eot: "?"
+  );
+
+  $formats: (
+          otf: "opentype",
+          ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-display: swap;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@include font-face("Montserrat", "Montserrat-Medium", "../fonts/Montserrat/Montserrat-Medium", 500, normal);
+@include font-face("Montserrat", "Montserrat-SemiBold", "../fonts/Montserrat/Montserrat-SemiBold", 600, normal);
+@include font-face("Montserrat", "Montserrat-ExtraBold", "../fonts/Montserrat/Montserrat-ExtraBold", 800, normal);
+@include font-face("MontserratAlternates", "MontserratAlternates-SemiBold", "../fonts/MontserratAlternates/MontserratAlternates-SemiBold", 600, normal);
+@include font-face("MontserratAlternates", "MontserratAlternates-Bold", "../fonts/MontserratAlternates/MontserratAlternates-Bold", 700, normal);
+@include font-face("MontserratAlternates", "MontserratAlternates-ExtraBold", "../fonts/MontserratAlternates/MontserratAlternates-ExtraBold", 800, normal);
+@include font-face("MontserratAlternates", "MontserratAlternates-Black", "../fonts/MontserratAlternates/MontserratAlternates-Black", 900, normal);
+
