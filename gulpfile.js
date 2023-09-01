@@ -126,7 +126,8 @@ function sprite() {
 }
 
 function devSprite() {
-    return src(['src/img/svg/*.svg'])
+
+    return src(['src/img/svg/*.svg','!src/img/svg/ng-*.svg'])
         .pipe(imagemin([
             imagemin.svgo({
                 plugins: [
@@ -166,7 +167,7 @@ function watcher() {
     watch(['src/styles/**/*.scss'], styles);
     watch(['src/scripts/main.js'], scripts);
     watch(['src/img/*.{png,jpg,jpeg}'], devToWebp);
-    watch(['src/img/svg/*.svg', '!src/img/svg/sprite.svg'], series(cleanSprite, devSprite));
+    watch(['src/img/svg/*.svg', '!src/img/svg/sprite.svg', '!src/img/svg/ng-*.svg'], series(cleanSprite, devSprite));
 }
 
 function browsersync() {

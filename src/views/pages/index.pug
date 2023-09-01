@@ -95,6 +95,74 @@ block content
                         ._item-shadow
             ._bg.grid-bg
                 +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
+        section.lead-magnet.-discount
+            ._container.container
+                ._inner
+                    ._content
+                        ._leftbox
+                            h2._title.h2 Хочу скидку!
+                            ._salebox
+                                ._old-price 1000 ₽
+                                +icon('dashed-arrow-right')
+                                ._price 900 ₽
+                        ._rightbox
+                            ._subtitle Дарим 10% скидку на&nbsp;первый заказ!
+                            a(href="#")._btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                        ._abs-img.-one.abs-img
+                    ._sticker.w-shadow
+                        ._sticker-body
+                            +icon('sparkle')
+                            ._sticker-text 10%
+                            +icon('sparkle')
+                    ._bg.grid-bg
+                        +pictureAdaptive('main-banner-bg', 'png', 1217, 282, 767)
+        section.services
+            ._container.container
+                h2._title.h2 Популярные #[span.txt-pink услуги]
+                ._items
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Курсовые
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price от 1490 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Дипломные
+                            ._item-box
+                                ._item-exec-time от 3х дней
+                                ._pricebox
+                                    ._old-price 12.900 ₽
+                                    ._price от 9900 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Практические задания
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price 1490 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Реферат
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price от 990 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                a(href="#")._more-btn.common-btn.common-btn--pink.w-shadow
+                    .common-btn__body Все услуги
 
 block footer
     include ../components/footer
