@@ -1,0 +1,239 @@
+extends ../layout
+include ../mixins/mixins
+
+block content
+    .services-pg.pg-wrapper
+        .breadcrumbs.-absolute
+            ._container.container
+                ._items
+                    a(href="/")._item Главная
+                    a(href="#")._item Услуги
+                    ._item Диплом
+        section.main-form
+            ._container.container
+                ._inner
+                    ._content
+                        h1._title.h1 Заказать дипломную работу #[span.txt-green недорого]
+                        ._text Дипломам — лучшие исполнители. Стоимость видна сразу<br>до оформления заказа в удобной онлайн-форме с детализацией заказа.
+                        form._form
+                            ._form-items-wrapper.form-items-wrapper
+                                ._form-item.form-item.form-item--50.w-shadow
+                                    input(type="text" placeholder="E-mail").common-input
+                                ._form-item.form-item.form-item--50.w-shadow
+                                    select(name="type_work").js-search-select.js-input-required
+                                        option(value="") Тип работы
+                                        option(value="dissertatsija") Диссертация
+                                        option(value="diplom") Диплом
+                                        option(value="refer") Реферат
+                            button(type="submit")._submit-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                            ._sticker.w-shadow
+                                ._sticker-body
+                                    +icon('lightning')
+                                    | Кешбэк 10%
+                    ._img
+                        +pictureAdaptive('main-form-services', 'png', 507, 604, 599)
+            ._bg.grid-bg
+                +pictureAdaptive('main-grid', 'png', 1920, 801, 479)
+        section.lead-magnet.-summer
+            ._container.container
+                ._inner
+                    ._content
+                        h2._title.h2 Летом самые низкие цены
+                        a(href="#")._btn.common-btn.common-btn--pink.w-shadow
+                            .common-btn__body Заказать
+                    ._bg.grid-bg
+                        +pictureAdaptive('main-banner-bg', 'png', 1217, 282, 767)
+                    ._abs-img.-one.abs-img
+                        +picture('main-banner-summer1', 'png', 163, 173)
+                    ._abs-img.-two.abs-img
+                        +icon('mb-arrow')
+                    ._abs-img.-three.abs-img
+                        +picture('main-banner-summer3', 'png', 163, 134)
+                    ._abs-img.-four.abs-img
+                        +picture('main-banner-summer4', 'png', 322, 229)
+                    ._abs-img.-five.abs-img
+                        +picture('main-banner-summer5', 'png', 137, 137)
+        section.steps
+            ._container.container
+                ._items
+                    ._item.w-shadow
+                        ._item-content
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Подберём лучшего исполнителя по&nbsp;вашему предмету
+                            ._item-text Вам&nbsp;не&nbsp;придётся заниматься поиском автора и&nbsp;обсуждением деталей заказа.
+                        ._item-img
+                            +pictureAdaptive('steps1', 'png', 185, 185, 479)
+                    ._item.w-shadow
+                        ._item-content
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Проконтролируем автора по&nbsp;срокам и&nbsp;качеству
+                            ._item-text Наш&nbsp;отдел качества проверит заказ на&nbsp;соответствие требованиям и&nbsp;МУ.
+                        ._item-img
+                            +pictureAdaptive('steps2', 'png', 185, 185, 479)
+                        ._item-shadow
+                    ._item.w-shadow
+                        ._item-content
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Не&nbsp;знаете с&nbsp;чего начать?
+                            ._item-text Выполним план к&nbsp;вашей работе бесплатно, после&nbsp;согласования приступим к&nbsp;выполнению работы.
+                        ._item-img
+                            +pictureAdaptive('steps3', 'png', 185, 185, 479)
+                        ._item-shadow
+                    ._item.w-shadow
+                        ._item-content
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Хотите проконтролировать ход&nbsp;написания работы?
+                            ._item-text Выдадим работу по&nbsp;главам, после&nbsp;согласования приступим к&nbsp;следующей.
+                        ._item-img
+                            +pictureAdaptive('steps4', 'png', 185, 185, 479)
+                        ._item-shadow
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
+        section.lead-magnet.-discount
+            ._container.container
+                ._inner
+                    ._content
+                        ._leftbox
+                            h2._title.h2 Хочу скидку!
+                            ._salebox
+                                ._old-price 1000 ₽
+                                +icon('dashed-arrow-right')
+                                ._price 900 ₽
+                        ._rightbox
+                            ._subtitle Дарим 10% скидку на&nbsp;первый заказ!
+                            a(href="#")._btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                        ._abs-img.-one.abs-img
+                    ._sticker.w-shadow
+                        ._sticker-body
+                            +icon('sparkle')
+                            ._sticker-text 10%
+                            +icon('sparkle')
+                    ._bg.grid-bg
+                        +pictureAdaptive('main-banner-bg', 'png', 1217, 282, 767)
+        section.services
+            ._container.container
+                h2._title.h2 Дипломы
+                ._items.-triple
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Для вуза (ВКР)
+                            ._item-box
+                                ._item-label-box
+                                    ._item-exec-time от 4х часов
+                                    ._item-rating Ср. оценка: 4.9
+                                ._pricebox
+                                    ._price от 12 000 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Для колледжа
+                            ._item-box
+                                ._item-label-box
+                                    ._item-exec-time от 4х часов
+                                    ._item-rating Ср. оценка: 4.9
+                                ._pricebox
+                                    ._price от 12 000 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Глава
+                            ._item-box
+                                ._item-label-box
+                                    ._item-exec-time от 4х часов
+                                    ._item-rating Ср. оценка: 4.9
+                                ._pricebox
+                                    ._price от 2 000 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+        section.services
+            ._container.container
+                h2._title.h2 Дополнительные услуги
+                ._items
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Курсовые
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price от 1490 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Дипломные
+                            ._item-box
+                                ._item-exec-time от 3х дней
+                                ._pricebox
+                                    ._old-price 12.900 ₽
+                                    ._price от 9900 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Практические задания
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price 1490 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Реферат
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price от 990 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Курсовые
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price от 1490 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Дипломные
+                            ._item-box
+                                ._item-exec-time от 3х дней
+                                ._pricebox
+                                    ._old-price 12.900 ₽
+                                    ._price от 9900 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Практические задания
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price 1490 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Реферат
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price от 990 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать

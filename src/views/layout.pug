@@ -9,8 +9,11 @@ html(lang="ru")
         link(rel="stylesheet" href="styles/style.min.css")
     body
         block header
+            include components/header
         block content
         block footer
+            include components/footer
+        include components/mobile-menu
         block scripts
             script(src="scripts/vendor.min.js")
             script(src="scripts/vendor/validator.min.js")

@@ -1,0 +1,245 @@
+.footer {
+  background-color: $template-dark;
+  padding: 120px 0;
+  position: relative;
+  @media (max-width: 767px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 479px) {
+    padding: 85px 0;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    margin-right: 40px;
+    @media (max-width: 767px) {
+      flex-basis: auto;
+      width: 100%;
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      @media (max-width: 991px) {
+        justify-content: flex-start;
+      }
+      @media(max-width: 767px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+    }
+
+    &:nth-child(2) {
+      flex-basis: 555px;
+      max-width: 555px;
+      @media (max-width: 991px) {
+        flex-basis: 60%;
+        max-width: 60%;
+        margin-right: 0;
+      }
+      @media (max-width: 767px) {
+        flex-basis: auto;
+        max-width: 100%;
+        order: 1;
+      }
+    }
+
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-right: 0;
+      @media (max-width: 991px) {
+        flex-basis: 100%;
+        align-items: flex-start;
+      }
+      @media (max-width: 767px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      @media (max-width: 479px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+
+    .icon-logo {
+      width: 176px;
+      height: 35px;
+      margin-bottom: 4px;
+      @media (max-width: 479px) {
+        width: 132px;
+        height: 26px;
+      }
+    }
+  }
+
+  &__descriptor {
+    color: $white;
+    font-size: 13px;
+  }
+
+  &__sber {
+    .icon {
+      width: 210px;
+      height: 33px;
+      @media (max-width: 479px) {
+        width: 152px;
+        height: 23px;
+      }
+    }
+  }
+
+  &__navs {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 479px) {
+      flex-wrap: wrap;
+      margin: -20px -10px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+    @media (max-width: 479px) {
+      flex-basis: calc(50% - 20px);
+      max-width: calc(50% - 20px);
+      margin: 20px 10px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__nav-item {
+    color: $white;
+    margin-bottom: 20px;
+    @media (max-width: 379px) {
+      margin-bottom: 12px;
+    }
+
+    &:hover {
+      text-decoration-color: $white;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__contacts-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media (max-width: 991px) {
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__phone {
+    font-family: $font-secondary;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: $white;
+    @media (max-width: 767px) {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    &:hover {
+      text-decoration-color: $white;
+    }
+  }
+
+  &__mail {
+    color: $white;
+    font-size: 21px;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+
+    &:hover {
+      text-decoration-color: $white;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    @media (max-width: 479px) {
+      display: none;
+    }
+  }
+
+  &__social-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--tg {
+      background-color: #039BE5;
+      border-radius: 50%;
+
+      .icon {
+        width: 21px;
+        height: 18px;
+      }
+    }
+
+    &--vk {
+      background-color: #2787F5;
+      border-radius: 10px;
+
+      .icon {
+        width: 26px;
+        height: 15px;
+      }
+    }
+  }
+}

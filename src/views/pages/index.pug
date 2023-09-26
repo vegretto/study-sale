@@ -1,8 +1,6 @@
 extends ../layout
 include ../mixins/mixins
 
-block header
-    include ../components/header
 block content
     .main-pg.pg-wrapper
         section.main-form
@@ -236,11 +234,11 @@ block content
                         +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
         section.lead-magnet.-price
             ._container.container
-                .sparkle-sticker
+                .sparkle-sticker.-lead-magnet
                     +icon('sparkle')
                 ._inner
                     ._content
-                        h2._title.h2  Цена видна #[span.txt-bg-dark сразу] при&nbsp;оформлении заказа
+                        h2._title.h2 Цена видна #[span.txt-bg-dark сразу] при&nbsp;оформлении заказа
                         a(href="#")._btn.common-btn.common-btn--pink.w-shadow
                             .common-btn__body Узнать цену
                     ._bg.grid-bg
@@ -376,85 +374,252 @@ block content
                             +icon('arrow-slider-right')
                         .swiper-button.swiper-button--next
                             +icon('arrow-slider-right')
-                ._slider.swiper-slider.js-feedbacks-slider
-                    ._swiper-wrapper.swiper-wrapper
-                        ._swiper-slide.swiper-slide
-                            ._item.w-shadow
-                                ._item-body
-                                    ._item-top
-                                        ._item-card
-                                            ._item-avatar
-                                                +icon('avatar-ph-female')
-                                            ._item-card-box
-                                                ._item-card-name Наталья
-                                                ._item-card-stars.js-rating-stars(data-rating="3.5")
-                                                    ._item-card-star.js-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star.js-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star.js-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star.js-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star.js-star
-                                                        +icon('rating-star')
-                                        ._item-source
-                                            +icon('rating-google')
-                                            ._item-source-name Google
-                                    ._item-text Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5!
-                        ._swiper-slide.swiper-slide
-                            ._item.w-shadow
-                                ._item-body
-                                    ._item-top
-                                        ._item-card
-                                            ._item-avatar
-                                                +icon('avatar-ph-male')
-                                            ._item-card-box
-                                                ._item-card-name Михаил
-                                                ._item-card-stars(data-rating="4")
-                                                    ._item-card-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star
-                                                        +icon('rating-star')
-                                        ._item-source
-                                            +icon('rating-yandex')
-                                            ._item-source-name Yandex
-                                    ._item-text Решила проконсультироваться по написанию дипломной работы. Зашла на первый попавшийся сайт. Рассчитала на сайте примерную стоимость и решилась. Удовольствие недешёвое, но это лучше, чем тратить свои нервы и силы, пытаясь разобраться во всем самостоятельно, тем более времени на это абсолютно нет. После консультации работу писала неспешно. Уже показала своему научному руководителю, одобрил. Были нюансы по оформлению, но тут моя вина, у нас в вузе методичка другая.
-                        ._swiper-slide.swiper-slide
-                            ._item.w-shadow
-                                ._item-body
-                                    ._item-top
-                                        ._item-card
-                                            ._item-avatar
-                                                +icon('avatar-ph')
-                                            ._item-card-box
-                                                ._item-card-name Наталья
-                                                ._item-card-stars(data-rating="5")
-                                                    ._item-card-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star
-                                                        +icon('rating-star')
-                                                    ._item-card-star
-                                                        +icon('rating-star')
-                                        ._item-source
-                                            +icon('rating-google')
-                                            ._item-source-name Google
-                                    ._item-text Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5!
+                ._slider-wrapper
+                    ._slider.swiper-slider.js-feedbacks-slider
+                        ._swiper-wrapper.swiper-wrapper
+                            ._swiper-slide.swiper-slide
+                                ._item.w-shadow
+                                    ._item-body
+                                        ._item-top
+                                            ._item-card
+                                                ._item-avatar
+                                                    +icon('avatar-ph-female')
+                                                ._item-card-box
+                                                    ._item-card-name Наталья
+                                                    ._item-card-stars.js-rating-stars(data-rating="4.5")
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                            ._item-source
+                                                +icon('rating-google')
+                                                ._item-source-name Google
+                                        ._item-text Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5!
+                            ._swiper-slide.swiper-slide
+                                ._item.w-shadow
+                                    ._item-body
+                                        ._item-top
+                                            ._item-card
+                                                ._item-avatar
+                                                    +icon('avatar-ph-male')
+                                                ._item-card-box
+                                                    ._item-card-name Михаил
+                                                    ._item-card-stars.js-rating-stars(data-rating="5")
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                            ._item-source
+                                                +icon('rating-yandex')
+                                                ._item-source-name Yandex
+                                        ._item-text Решила проконсультироваться по написанию дипломной работы. Зашла на первый попавшийся сайт. Рассчитала на сайте примерную стоимость и решилась. Удовольствие недешёвое, но это лучше, чем тратить свои нервы и силы, пытаясь разобраться во всем самостоятельно, тем более времени на это абсолютно нет. После консультации работу писала неспешно. Уже показала своему научному руководителю, одобрил. Были нюансы по оформлению, но тут моя вина, у нас в вузе методичка другая.
+                            ._swiper-slide.swiper-slide
+                                ._item.w-shadow
+                                    ._item-body
+                                        ._item-top
+                                            ._item-card
+                                                ._item-avatar
+                                                    +icon('avatar-ph-female')
+                                                ._item-card-box
+                                                    ._item-card-name Наталья
+                                                    ._item-card-stars.js-rating-stars(data-rating="1.7")
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                            ._item-source
+                                                +icon('rating-google')
+                                                ._item-source-name Google
+                                        ._item-text Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5!
+        section.lead-magnet.-free-plan
+            ._container.container
+                .sparkle-sticker.-lead-magnet
+                    +icon('sparkle')
+                ._inner
+                    ._content
+                        h2._title.h2 Напишем план к&nbsp;вашей работе за&nbsp;2&nbsp;дня совершенно
+                        ._bottom-box
+                            ._free-sticker бесплатно
+                            a(href="#")._btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._bg.grid-bg
+                        +pictureAdaptive('main-banner-bg', 'png', 1217, 282, 767)
+                    ._arrow
+        section.specialists
+            ._container.container
+                ._inner
+                    h2._title.h2 Вам не надо тратить время на поиск подходящего специалиста, #[span.txt-yellow мы отобрали сильнейших!]
+                    ._items
+                        ._item С диссертациями и дипломами помогают только лучшие специалисты.
+                            ._item-arrow
+                        ._item При подборе исполнителя учитываем опыт работы по вашему предмету, оценку его работы другими клиентами, сдачу в срок, отсутствие доработок.
+                            ._item-arrow
+                        ._item По диссертациям помощь оказывают кандидаты и доктора наук. С ними можно пообщаться по конференц-связи.
+                            ._item-arrow
 
 
-block footer
-    include ../components/footer
+            ._abs-img.-one.abs-img
+                +pictureAdaptive('spec-doc', 'png', 445, 611, 767)
+            ._abs-img.-two.abs-img
+                +picture('spec-waves', 'png', 1917, 284)
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
+        section.faq
+            ._container.container
+                 h2._title.h2 #[span.txt-green Ответы] на вопросы
+                 ._items
+                     ._item.w-shadow
+                         ._item-body
+                             ._item-heading
+                                 +icon('sparkle')
+                                 ._item-heading-text Вы заключаете договор?
+                             ._item-text Заключаем договор оферту или письменный договор, при оформлении заказа в офисе. Выдаем онлайн чек или печатный чек в офисе. Оформляем наши с вами отношениям официально, с четко прописанными гарантиями в договоре.
+                     ._item.w-shadow
+                         ._item-body
+                             ._item-heading
+                                 +icon('sparkle')
+                                 ._item-heading-text Какие даете гарантии на оказанную помощь?
+                             ._item-text Гарантируем, что помощь будет оказана по всем указанным требованиям в заявке. Если потребуются доработки, вносим бесплатно в рамках первоначальных требований.
+                     ._item.w-shadow
+                         ._item-body
+                             ._item-heading
+                                 +icon('sparkle')
+                                 ._item-heading-text Какой результат от вашей помощи?
+                             ._item-text В результате у нас с вами получится полностью написанная, уникальная, проверенная отделом качества работа. Ее можно скачать в личном кабинете.
+                     ._item.w-shadow
+                         ._item-body
+                             ._item-heading
+                                 +icon('sparkle')
+                                 ._item-heading-text Мои личные данные будут защищены?
+                             ._item-text Все данные указанные на нашем сайте не будут переданы третьм лицам. Это закреплено в политике обработки персональных данных.
+                     ._item.w-shadow
+                         ._item-body
+                             ._item-heading
+                                 +icon('sparkle')
+                                 ._item-heading-text Если работа меня не устроит, смогу ли я вернуть деньги?
+                             ._item-text Очень редко, но иногда что-то может пойти не так. Если работа не будет соответствовать вашим требованиям, мы вернем деньги.
+                     ._item.w-shadow
+                         ._item-body
+                             ._item-heading
+                                 +icon('sparkle')
+                                 ._item-heading-text Можно ли пообщаться со специалистом напрямую?
+                             ._item-text Да, если помощь оказывается по кандидатским или докторским диссертациям, можно связаться со специалистом по конференц-связи.
+        section.lead-magnet-dark.-order-now
+            ._container.container
+                .sparkle-sticker
+                    +icon('sparkle')
+                ._inner
+                    ._left
+                        h2._title.h2 Оформить #[span.txt-yellow заказ]
+                        ._text Расчёт стоимости заказа происходит сразу онлайн. После оплаты заказа 10% возвращается на счёт в личном кабинете.
+                        ._sticker.w-shadow
+                            ._sticker-body
+                                +icon('sparkle')
+                                ._sticker-text Или можно оплатить до 50% стоимости следующего заказа
+                                +icon('sparkle')
+                    ._right
+                        form._form
+                            ._form-items-wrapper.form-items-wrapper
+                                ._form-item.form-item.w-shadow
+                                    input(type="text" placeholder="E-mail").common-input
+                                ._form-item.form-item.w-shadow
+                                    select(name="type_work").js-search-select.js-input-required
+                                        option(value="") Тип работы
+                                        option(value="dissertatsija") Диссертация
+                                        option(value="diplom") Диплом
+                                        option(value="refer") Реферат
+                            button(type="submit")._submit-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Узнать стоимость
+                    ._arrow
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
+        section.cities
+            ._container.container
+                h2._title.h2 Наши #[span.txt-pink оффлайн-офисы] во&nbsp;всех крупнейших городах&nbsp;России
+            ._items
+                ._items-line.js-cities-line
+                    ._item Челябинск
+                    ._item Воронеж
+                    ._item Волгоград
+                    ._item Омск
+                    ._item Томск
+                    ._item Москва
+                    ._item Санкт-Петербург
+                    ._item Екатеринбург
+                    ._item Казань
+                    ._item Челябинск
+                    ._item Воронеж
+                    ._item Волгоград
+                    ._item Омск
+                    ._item Томск
+            ._items
+                ._items-line.js-cities-line
+                    ._item Нижний Новгород
+                    ._item Сургут
+                    ._item Кемерово
+                    ._item Владивосток
+                    ._item Ростов-на-Дону
+                    ._item Пермь
+                    ._item Воронеж
+                    ._item Хабаровск
+                    ._item Нижний Новгород
+        section.seo
+            ._container.container
+                ._inner
+                    ._left
+                        ._seo-text
+                            h2 Профессионально
+                            p Мы гарантируем высокое качество консультаций, так как наши специалисты обладают высокой квалификацией и проходят тщательный тестовый отбор. Только 2 из 10 репетиторов приступают к консультациям.
+                            h2 Надежно
+                            p Каждый заказ, оформленный на нашей платформе, контролируется персональным менеджером. Благодаря тщательному контролю, вы гарантированно получаете качественную консультацию. Наш отдел технического контроля проверит работу на соответствие МУ, ГОСТ, антиплагиат.
+                            h2 Удобно
+                            p Вы всегда можете узнать о процессе выполнения консультации и задать вопрос в режиме "онлайн" в личном кабинете.
 
+                    ._right
+                        ._table.w-shadow
+                            ._table-body
+                                ._table-item
+                                    ._table-heading Специалист
+                                    ._table-text С опытом
+                                ._table-item
+                                    ._table-heading Гарантия
+                                    ._table-text До 6 месяцев
+                                ._table-item
+                                    ._table-heading Срок помощи
+                                    ._table-text от 2-х часов
+                                ._table-item
+                                    ._table-heading Оригинальность
+                                    ._table-text С опытом
+                                ._table-item
+                                    ._table-heading Цена
+                                    ._table-text от 2 500 руб
+                                ._table-item
+                                    ._table-heading Доработки
+                                    ._table-text Бесплатно
+                                ._table-item
+                                    ._table-heading Анонимность
+                                    ._table-text Гарантируем
+                                ._table-item
+                                    ._table-heading Кешбэк
+                                    ._table-text 10%
 
 
 
