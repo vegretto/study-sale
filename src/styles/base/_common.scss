@@ -229,6 +229,15 @@ section {
   }
 }
 
+.more-button {
+  margin-top: 10px;
+  width: 100%;
+
+  .common-btn__body {
+    padding: 20px;
+  }
+}
+
 .sparkle-sticker {
   position: absolute;
   z-index: 1;
@@ -1173,6 +1182,103 @@ section {
     }
   }
 }
+
+.opinions {
+  background-color: $white;
+  padding: 50px 0;
+  @media (max-width: 1364px) {
+
+  }
+
+  &__text {
+    font-size: 20px;
+    max-width: 910px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+    @media (max-width: 479px) {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    margin: -10px;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      margin: -5px;
+    }
+    @media (max-width: 479px) {
+      margin: -5px 0;
+    }
+  }
+
+  &__item {
+    background-color: $template-dark;
+    flex-basis: calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    @media (max-width: 1364px) {
+      flex-basis: calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+    @media (max-width: 767px) {
+      flex-basis: calc(50% - 10px);
+      max-width: calc(50% - 10px);
+      padding: 12px;
+      border-radius: 20px;
+      margin: 5px;
+    }
+    @media (max-width: 479px) {
+      flex-basis: 100%;
+      max-width: 100%;
+      margin: 5px 0;
+    }
+  }
+
+  &__item-heading {
+    background-color: $template-yellow;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+
+    .icon-sparkle {
+      width: 25px;
+      height: 25px;
+      margin-right: 6px;
+      fill: $template-pink;
+      flex-shrink: 0;
+    }
+  }
+
+  &__item-heading-text {
+    font-family: $font-secondary;
+    font-size: 28px;
+    font-weight: 800;
+    color: $template-dark;
+  }
+
+  &__item-text {
+    color: $white;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+}
+
 
 .modal-bg {
   position: absolute;

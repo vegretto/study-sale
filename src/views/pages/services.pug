@@ -156,84 +156,792 @@ block content
         section.services
             ._container.container
                 h2._title.h2 Дополнительные услуги
+                ._items.js-hide-some(data-max-items="3" data-items-to-show="10")
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Курсовые
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price от 1490 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Дипломные
+                            ._item-box
+                                ._item-exec-time от 3х дней
+                                ._pricebox
+                                    ._old-price 12.900 ₽
+                                    ._price от 9900 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Практические задания
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price 1490 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Реферат
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price от 990 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Курсовые
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price от 1490 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Дипломные
+                            ._item-box
+                                ._item-exec-time от 3х дней
+                                ._pricebox
+                                    ._old-price 12.900 ₽
+                                    ._price от 9900 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Практические задания
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price 1490 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading Реферат
+                            ._item-box
+                                ._item-exec-time от 4х часов
+                                ._pricebox
+                                    ._old-price 2000 ₽
+                                    ._price от 990 ₽
+                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Заказать
+        section.features
+            ._container.container
+                ._inner
+                    ._content
+                        h2._title.h2 Почему выбирают #[span.txt-green Studysale]
+                        ._items
+                            ._item.w-shadow
+                                ._item-body
+                                    ._item-heading
+                                        +icon('sparkle')
+                                        ._item-heading-text № 1
+                                    ._item-text По количеству оффлайн-офисов 20&nbsp;городах России.
+                            ._item.w-shadow
+                                ._item-body
+                                    ._item-heading
+                                        +icon('sparkle')
+                                        ._item-heading-text 100 000+
+                                    ._item-text Выполненных дипломов и&nbsp;диссертаций с&nbsp;нашей помощью.
+                            ._item.w-shadow
+                                ._item-body
+                                    ._item-heading
+                                        +icon('sparkle')
+                                        ._item-heading-text 4,9
+                                    ._item-text Средняя оценка по&nbsp;результатам опросов клиентов.
+                            ._item.w-shadow
+                                ._item-body
+                                    ._item-heading
+                                        +icon('sparkle')
+                                        ._item-heading-text 16
+                                    ._item-text Лет консультируем по&nbsp;написанию работ.
+                            ._item.w-shadow
+                                ._item-body
+                                    ._item-heading
+                                        +icon('sparkle')
+                                        ._item-heading-text 24/7
+                                    ._item-text Ваш персональный менеджер всегда на&nbsp;связи.
+                    ._sticker
+                        +pictureAdaptive('features-sticker', 'png', 194, 190, 767)
+                    ._waves
+                        +picture('features-waves', 'png', 454, 291)
+                    ._bg.grid-bg
+                        +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
+        section.lead-magnet.-price
+            ._container.container
+                .sparkle-sticker.-lead-magnet
+                    +icon('sparkle')
+                ._inner
+                    ._content
+                        h2._title.h2 Цена видна #[span.txt-bg-dark сразу] при&nbsp;оформлении заказа
+                        a(href="#")._btn.common-btn.common-btn--pink.w-shadow
+                            .common-btn__body Узнать цену
+                    ._bg.grid-bg
+                        +pictureAdaptive('main-banner-bg', 'png', 1217, 282, 767)
+                    ._abs-img.-one.abs-img
+                        +picture('main-banner-price1', 'png', 125, 122)
+                    ._abs-img.-two.abs-img
+                        +picture('main-banner-price2', 'png', 265, 258)
+                    ._arrow
+        section.advantages
+            ._container.container
+                h2._title.h2 Наши #[span.txt-green преимущества]
+                ._items
+                    ._item.-lg.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text За 16 лет помогли с более чем 800 000 работами
+                            ._item-text Ваш заказ будет выполнен точно в срок. Берёмся за выполнение сложных и нестандартных заказов.
+                            ._item-img
+                                +pictureAdaptive('advantages1', 'png', 301, 207, 1199)
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Низкие цены
+                            ._item-text Вам не придётся переплачивать за учебные работы. Система аукциона и большие объёмы позволяют нам предложить одни из самых низких цен на рынке.
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Нет комиссии платформы
+                            ._item-text Мы — за честные отношения. У нас нет дополнительных комиссий платформы. Окончательная цена видна сразу при оформлении заказа.
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Помогаем "под ключ"
+                            ._item-text У нас не надо заниматься поиском исполнителя, обсуждением условий заказа и проверкой работы за автором. Подберем лучшего доступного исполнителя, проверим работу на соответствие всем требованиям. Вам нужно только сдать работу преподавателю.
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Опытные исполнители
+                            ._item-text Наши специалисты проходят строгий отбор. Заказы распределяются с учетом образованиям и&nbsp;опыта специалиста, чтобы вам помогал тот, кто разбирается в теме.
+        section.how-it-works
+            ._container.container
+                ._content
+                    h2._title.h2 Как это работает
+                    ._items
+                        ._item
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text 1
+                            ._item-text Цена видна в онлайн-калькуляторе еще&nbsp;до&nbsp;оформления заказа.
+                        ._item
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text 2
+                            ._item-text После оформления заказа и&nbsp;внесения предоплаты 50%, приступаем к&nbsp;оказанию помощи. Статус можно отслеживать в&nbsp;удобном личном кабинете.
+                        ._item
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text 3
+                            ._item-text После выполнения заказа, вносите оставшуюся часть оплаты и&nbsp;скачивайте результат в&nbsp;личном кабинете.
+                        ._item
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text 4
+                            ._item-text Ждем вашей оценки. Так&nbsp;мы&nbsp;понимаем, что сделали хорошо, а&nbsp;что&nbsp;можно улучшить.
+                    ._arrow.-one
+                    ._arrow.-two
+                    ._arrow.-three
+                    ._abs-img.-one.abs-img
+                        +picture('how-it-works1', 'png', 218, 229)
+            ._abs-img.-two.abs-img
+                +picture('how-it-works2', 'png', 992, 414)
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
+        section.guarantees
+            ._container.container
+                h2._title.h2 Наши #[span.txt-pink гарантии]
                 ._items
                     ._item.w-shadow
                         ._item-body
-                            ._item-heading Курсовые
-                            ._item-box
-                                ._item-exec-time от 4х часов
-                                ._pricebox
-                                    ._old-price 2000 ₽
-                                    ._price от 1490 ₽
-                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
-                                .common-btn__body Заказать
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Безопасные платежи
+                            ._item-text Прием платежей осуществляется через защищенный шлюз Сбербанка. Никто не&nbsp;получит доступ к&nbsp;вашим платежным данным.
                     ._item.w-shadow
                         ._item-body
-                            ._item-heading Дипломные
-                            ._item-box
-                                ._item-exec-time от 3х дней
-                                ._pricebox
-                                    ._old-price 12.900 ₽
-                                    ._price от 9900 ₽
-                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
-                                .common-btn__body Заказать
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Официальный договор оферта
+                            ._item-text Формализуем наши отношения посредством договора оферты. Выдаем онлайн чек на&nbsp;почту. Печатный выдаем в офисах.
                     ._item.w-shadow
                         ._item-body
-                            ._item-heading Практические задания
-                            ._item-box
-                                ._item-exec-time от 4х часов
-                                ._pricebox
-                                    ._old-price 2000 ₽
-                                    ._price 1490 ₽
-                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
-                                .common-btn__body Заказать
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Бесплатные доработки
+                            ._item-text Преподаватель вернул работу на&nbsp;доработку? Выполним бесплатно в&nbsp;рамках первоначальных требований.
                     ._item.w-shadow
                         ._item-body
-                            ._item-heading Реферат
-                            ._item-box
-                                ._item-exec-time от 4х часов
-                                ._pricebox
-                                    ._old-price 2000 ₽
-                                    ._price от 990 ₽
-                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
-                                .common-btn__body Заказать
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Сделаем точно в&nbsp;срок
+                            ._item-text Если что-то пойдет не&nbsp;так или&nbsp;автор заболеет, заменим исполнителя без&nbsp;приостановки выполнения работы.
                     ._item.w-shadow
                         ._item-body
-                            ._item-heading Курсовые
-                            ._item-box
-                                ._item-exec-time от 4х часов
-                                ._pricebox
-                                    ._old-price 2000 ₽
-                                    ._price от 1490 ₽
-                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Оригинальная работа в&nbsp;соответствии с&nbsp;методическими указаниями
+                            ._item-text Наш отдел технического контроля проконтролирует соблюдение требований методического указания, ГОСТа и % оригинальности.
+        section.opinions
+            ._container.container
+                ._text Нам важно, чтобы вы приняли взвешенное решение, обращаясь за помощью. Поэтому собрали для вас честные мнения клиентов StudySale — так вы сможете оценить все плюсы и минусы и найдёте ответы на волнующие вопросы.
+                ._items
+                    ._item
+                        ._item-heading
+                            +icon('sparkle')
+                            ._item-heading-text 4.9
+                        ._item-text Средняя оценка по результатам опросов клиентов
+                    ._item
+                        ._item-heading
+                            +icon('sparkle')
+                            ._item-heading-text 8 из 10
+                        ._item-text Студентов обращаются за&nbsp;помощью повторно
+                    ._item
+                        ._item-heading
+                            +icon('sparkle')
+                            ._item-heading-text 96%
+                        ._item-text Клиентов оценили общение&nbsp;с&nbsp;менеджерами
+                    ._item
+                        ._item-heading
+                            +icon('sparkle')
+                            ._item-heading-text 100 000+
+                        ._item-text Выполненных работ с&nbsp;нашей&nbsp;помощью
+        section.feedbacks
+            ._container.container
+                ._title-box
+                    h2._title.h2 Наши #[span.txt-green отзывы]
+                    ._rating-items
+                        ._rating-item
+                            +icon('rating-google')
+                            ._rating-item-num 4.9
+                        ._rating-item
+                            +icon('rating-yahoo')
+                            ._rating-item-num 4.2
+                        ._rating-item
+                            +icon('rating-2gis')
+                            ._rating-item-num 4.7
+                        ._rating-item
+                            +icon('rating-yandex')
+                            ._rating-item-num 4.7
+                    ._slider-controls.slider-controls
+                        .swiper-button.swiper-button--prev
+                            +icon('arrow-slider-right')
+                        .swiper-button.swiper-button--next
+                            +icon('arrow-slider-right')
+                ._slider-wrapper
+                    ._slider.swiper-slider.js-feedbacks-slider
+                        ._swiper-wrapper.swiper-wrapper
+                            ._swiper-slide.swiper-slide
+                                ._item.w-shadow
+                                    ._item-body
+                                        ._item-top
+                                            ._item-card
+                                                ._item-avatar
+                                                    +icon('avatar-ph-female')
+                                                ._item-card-box
+                                                    ._item-card-name Наталья
+                                                    ._item-card-stars.js-rating-stars(data-rating="4.5")
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                            ._item-source
+                                                +icon('rating-google')
+                                                ._item-source-name Google
+                                        ._item-text Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5!
+                            ._swiper-slide.swiper-slide
+                                ._item.w-shadow
+                                    ._item-body
+                                        ._item-top
+                                            ._item-card
+                                                ._item-avatar
+                                                    +icon('avatar-ph-male')
+                                                ._item-card-box
+                                                    ._item-card-name Михаил
+                                                    ._item-card-stars.js-rating-stars(data-rating="5")
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                            ._item-source
+                                                +icon('rating-yandex')
+                                                ._item-source-name Yandex
+                                        ._item-text Решила проконсультироваться по написанию дипломной работы. Зашла на первый попавшийся сайт. Рассчитала на сайте примерную стоимость и решилась. Удовольствие недешёвое, но это лучше, чем тратить свои нервы и силы, пытаясь разобраться во всем самостоятельно, тем более времени на это абсолютно нет. После консультации работу писала неспешно. Уже показала своему научному руководителю, одобрил. Были нюансы по оформлению, но тут моя вина, у нас в вузе методичка другая.
+                            ._swiper-slide.swiper-slide
+                                ._item.w-shadow
+                                    ._item-body
+                                        ._item-top
+                                            ._item-card
+                                                ._item-avatar
+                                                    +icon('avatar-ph-female')
+                                                ._item-card-box
+                                                    ._item-card-name Наталья
+                                                    ._item-card-stars.js-rating-stars(data-rating="1.7")
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                                        ._item-card-star.js-star
+                                                            +icon('rating-star')
+                                            ._item-source
+                                                +icon('rating-google')
+                                                ._item-source-name Google
+                                        ._item-text Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5!
+        section.lead-magnet.-free-plan
+            ._container.container
+                .sparkle-sticker.-lead-magnet
+                    +icon('sparkle')
+                ._inner
+                    ._content
+                        h2._title.h2 Напишем план к&nbsp;вашей работе за&nbsp;2&nbsp;дня совершенно
+                        ._bottom-box
+                            ._free-sticker бесплатно
+                            a(href="#")._btn.common-btn.common-btn--pink.w-shadow
                                 .common-btn__body Заказать
-                    ._item.w-shadow
-                        ._item-body
-                            ._item-heading Дипломные
-                            ._item-box
-                                ._item-exec-time от 3х дней
-                                ._pricebox
-                                    ._old-price 12.900 ₽
-                                    ._price от 9900 ₽
-                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
-                                .common-btn__body Заказать
-                    ._item.w-shadow
-                        ._item-body
-                            ._item-heading Практические задания
-                            ._item-box
-                                ._item-exec-time от 4х часов
-                                ._pricebox
-                                    ._old-price 2000 ₽
-                                    ._price 1490 ₽
-                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
-                                .common-btn__body Заказать
-                    ._item.w-shadow
-                        ._item-body
-                            ._item-heading Реферат
-                            ._item-box
-                                ._item-exec-time от 4х часов
-                                ._pricebox
-                                    ._old-price 2000 ₽
-                                    ._price от 990 ₽
-                            a(href="#")._item-btn.common-btn.common-btn--pink.w-shadow
-                                .common-btn__body Заказать
+                    ._bg.grid-bg
+                        +pictureAdaptive('main-banner-bg', 'png', 1217, 282, 767)
+                    ._arrow
+        section.specialists
+            ._container.container
+                ._inner
+                    h2._title.h2 Вам не надо тратить время на поиск подходящего специалиста, #[span.txt-yellow мы отобрали сильнейших!]
+                    ._items
+                        ._item С диссертациями и дипломами помогают только лучшие специалисты.
+                            ._item-arrow
+                        ._item При подборе исполнителя учитываем опыт работы по вашему предмету, оценку его работы другими клиентами, сдачу в срок, отсутствие доработок.
+                            ._item-arrow
+                        ._item По диссертациям помощь оказывают кандидаты и доктора наук. С ними можно пообщаться по конференц-связи.
+                            ._item-arrow
+
+
+            ._abs-img.-one.abs-img
+                +pictureAdaptive('spec-doc', 'png', 445, 611, 767)
+            ._abs-img.-two.abs-img
+                +picture('spec-waves', 'png', 1917, 284)
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
+        section.faq-tabs
+            ._container.container
+                ._controls.js-tabs-controls
+                    ._controls-item.active(data-tab="#faq1") Авторизация и безопасность
+                    ._controls-item(data-tab="#faq2") Сервис
+                    ._controls-item(data-tab="#faq3") Дополнительно
+                    ._controls-item(data-tab="#faq4") Доработки и возврат
+                    ._controls-item(data-tab="#faq5") Качество консультаций
+                    ._controls-item(data-tab="#faq6") Качество консультаций
+                    ._controls-item(data-tab="#faq7") Консультации
+                ._tabs.js-tabs
+                    ._tab.active#faq1
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Каким способом я могу оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Гарантируете ли вы конфиденциальность?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как отписаться от рассылки, которая приходит на почту?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                    ._tab#faq2
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                    ._tab#faq3
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Каким способом я могу оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Гарантируете ли вы конфиденциальность?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как отписаться от рассылки, которая приходит на почту?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                    ._tab#faq4
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                    ._tab#faq5
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Каким способом я могу оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Гарантируете ли вы конфиденциальность?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как отписаться от рассылки, которая приходит на почту?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                    ._tab#faq6
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                    ._tab#faq7
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Каким способом я могу оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Гарантируете ли вы конфиденциальность?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как отписаться от рассылки, которая приходит на почту?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+        section.subjects
+            ._container.container
+                h2._title.h2 Работы #[span.txt-green по предметам]
+                ._items-box
+                    ._items.w-shadow
+                        ._items-body
+                            ._items-wrapper
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | А
+                                    ._links
+                                        a(href="#")._link авиационная техника
+                                        a(href="#")._link автоматизация процессов
+                                        a(href="#")._link автоматика и управление
+                                        a(href="#")._link архитектура
+                                        a(href="#")._link английский язык
+                                        a(href="#")._link антикризисное управление
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | Б
+                                    ._links
+                                        a(href="#")._link базы данных
+                                        a(href="#")._link банковское дело
+                                        a(href="#")._link биржа
+                                        a(href="#")._link бухгалтерский учет
+                                        a(href="#")._link биология
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | В
+                                    ._links
+                                        a(href="#")._link высшая математика
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | Г
+                                    ._links
+                                        a(href="#")._link геология
+                                        a(href="#")._link геометрия
+                                        a(href="#")._link гидравлика
+                                        a(href="#")._link готовые
+                                        a(href="#")._link гражданское право
+                                        a(href="#")._link графический дизайн
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | Д
+                                    ._links
+                                        a(href="#")._link детали машин
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | Ж
+                                    ._links
+                                        a(href="#")._link журналистика
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | И
+                                    ._links
+                                        a(href="#")._link инвестиции
+                                        a(href="#")._link инновационный менеджмент
+                                        a(href="#")._link информатика
+                                        a(href="#")._link информационная безопасность
+                                        a(href="#")._link информационные технологии
+                                        a(href="#")._link история
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | К
+                                    ._links
+                                        a(href="#")._link конфликтология
+                                        a(href="#")._link криминалистика
+                                        a(href="#")._link культурология
+                                        a(href="#")._link корпоративный тайм менеджмент
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | Л
+                                    ._links
+                                        a(href="#")._link логистика
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | М
+                                    ._links
+                                        a(href="#")._link макроэкономика
+                                        a(href="#")._link маркетинг
+                                        a(href="#")._link материаловедение
+                                        a(href="#")._link математика
+                                        a(href="#")._link машиностроение
+                                        a(href="#")._link медицина
+                                        a(href="#")._link менеджмент
+                                        a(href="#")._link металлургия
+                                        a(href="#")._link метрология
+                                        a(href="#")._link механика
+                                        a(href="#")._link микроэкономика
+                                        a(href="#")._link менеджмент организации
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | Н
+                                    ._links
+                                        a(href="#")._link налоги и налогообложение
+                                        a(href="#")._link нефтегазовое дело
+                                ._item
+                                    ._letter
+                                        +icon('sparkle')
+                                        | О
+                                    ._links
+                                        a(href="#")._link оптотехника
+                                        a(href="#")._link организации
+

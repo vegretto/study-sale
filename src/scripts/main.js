@@ -104,6 +104,59 @@ $(document).ready(function () {
         parent.toggleClass('opened')
         parent.find('.mobile-menu__dropdown-box').slideToggle()
     })
+
+    //Добавляет кнопку и функционал "Показать еще"
+    const hideSome = (element, resolution) => {
+        if (screen.width > resolution) return
+        const maxItems = element.attr('data-max-items')
+        const itemsToShow = element.attr('data-items-to-show')
+        const items = element.children()
+        const itemsQty = items.length
+        if (itemsQty <= maxItems) return
+
+        items.each(function (index) {
+            if (index >= maxItems) $(this).hide().addClass('hidden')
+        })
+
+        const moreBtnMarkup = '<button class="more-button js-more-btn common-btn common-btn--pink w-shadow"><div class="common-btn__body">Посмотреть ещё</div></button>'
+        element.append(moreBtnMarkup)
+        const moreBtnDom = element.find('.js-more-btn')
+        moreBtnDom.on('click', function () {
+            const hiddenItems = element.children('.hidden')
+            if (hiddenItems.length <= itemsToShow) moreBtnDom.remove()
+            hiddenItems.each(function (index) {
+                if (index < itemsToShow) $(this).show().removeClass('hidden')
+            })
+        })
+    }
+
+    $('.js-hide-some').each(function () {
+        hideSome($(this), 767)
+    })
+
+    //Аккордион
+    $('.js-accordion-toggle').on('click', function () {
+        if (!$(this).hasClass('opened')) {
+            $(this).next('.js-accordion-body').slideDown(300).addClass('opened')
+            $(this).addClass('opened')
+        } else {
+            $(this).next('.js-accordion-body').slideUp(300).removeClass('opened')
+            $(this).removeClass('opened')
+        }
+    })
+
+    //Переключение табов
+    const tabControlsWrapper = $('.js-tabs-controls')
+    const tabControls = tabControlsWrapper.children()
+
+    tabControls.on('click', function () {
+        const tabId = $(this).attr('data-tab')
+        const tabsWrapper = tabControlsWrapper.siblings('.js-tabs')
+        tabControls.removeClass('active')
+        $(this).addClass('active')
+        tabsWrapper.children().removeClass('active')
+        tabsWrapper.children(tabId).addClass('active')
+    })
 });
 
 
