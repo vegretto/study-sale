@@ -1,0 +1,118 @@
+extends ../layout
+include ../mixins/mixins
+
+block content
+    .about-us-pg.pg-wrapper
+        section.top-page-box
+            ._container.container
+                ._inner
+                    .breadcrumbs
+                        ._items
+                            a(href="/")._item Главная
+                            ._item О компании
+                    h1._title О компании
+            ._bg.grid-bg
+                +pictureAdaptive('top-page-box-grid', 'png', 1920, 250, 479)
+        section.map-section
+            ._container.container
+                ._map-container#mainMap(data-json="/data/contacts.json")
+                    ._map-ph
+                        +pictureAdaptive1x('main-map-ph', 'png', 1660, 600, 479)
+        section.about-info
+            ._container.container
+                ._items
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading 17 лет
+                            ._item-text За&nbsp;17&nbsp;лет работы мы&nbsp;помогли более чем 1&nbsp;000&nbsp;000&nbsp;студентов. Сформировали сильную команду специалистов, кандидатов, докторов наук, собственный отдел контроля качества. Мы&nbsp;берёмся за&nbsp;выполнение нестандартных и&nbsp;самых сложных заказов. Наш опыт поможет вам качественно и&nbsp;в&nbsp;срок написать работу.
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading 18 городов
+                            ._item-text Наши офисы находятся во всех крупнейших городах РФ. Хотите прийти лично и оформить заказ в офисе? Оформляем официальный договор и кассовый чек. Мы — за честные отношения
+                ._img.abs-img
+                    +picture('about-info', 'png', 384, 581)
+        section.about-details
+            ._container.container
+                h2._title.h2 За 17 лет мы помогли с:
+                ._items
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text 100.000
+                            ._item-text Дипломов и ВКР
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text 20.000
+                            ._item-text Магистерских диссертаций
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text 300
+                            ._item-text Кандитатских диссертаций
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text 25
+                            ._item-text Докторских диссертаций
+        section.lead-magnet-dark.-order-now
+            ._container.container
+                .sparkle-sticker
+                    +icon('sparkle')
+                ._inner
+                    ._left
+                        h2._title.h2 Оформить #[span.txt-yellow заказ]
+                        ._text Расчёт стоимости заказа происходит сразу онлайн. После оплаты заказа 10% возвращается на счёт в личном кабинете.
+                        ._sticker.w-shadow
+                            ._sticker-body
+                                +icon('sparkle')
+                                ._sticker-text Или можно оплатить до 50% стоимости следующего заказа
+                                +icon('sparkle')
+                    ._right
+                        form._form.js-validator
+                            ._form-items-wrapper.form-items-wrapper
+                                ._form-item.form-item.w-shadow
+                                    input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
+                                ._form-item.form-item.w-shadow
+                                    select(name="type_work").js-search-select.js-input-required
+                                        option(value="") Тип работы
+                                        option(value="dissertatsija") Диссертация
+                                        option(value="diplom") Диплом
+                                        option(value="refer") Реферат
+                            button(type="submit")._submit-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Узнать стоимость
+                    ._arrow
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
+        section.cities
+            ._items
+                ._items-line.js-cities-line
+                    ._item Челябинск
+                    ._item Воронеж
+                    ._item Волгоград
+                    ._item Омск
+                    ._item Томск
+                    ._item Москва
+                    ._item Санкт-Петербург
+                    ._item Екатеринбург
+                    ._item Казань
+                    ._item Челябинск
+                    ._item Воронеж
+                    ._item Волгоград
+                    ._item Омск
+                    ._item Томск
+            ._items
+                ._items-line.js-cities-line
+                    ._item Нижний Новгород
+                    ._item Сургут
+                    ._item Кемерово
+                    ._item Владивосток
+                    ._item Ростов-на-Дону
+                    ._item Пермь
+                    ._item Воронеж
+                    ._item Хабаровск
+                    ._item Нижний Новгород

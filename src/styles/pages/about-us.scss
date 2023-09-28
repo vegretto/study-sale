@@ -1,0 +1,234 @@
+.map-section {
+  padding: 60px 0;
+  background-color: $white;
+
+  &__map-container {
+    width: 100%;
+    height: 650px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    @media (max-width: 479px) {
+      height: 500px;
+      border-radius: 30px;
+    }
+  }
+
+  &__map-ph {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.about-info {
+  padding: 60px 0 55px;
+  background-color: $white;
+  @media (max-width: 1364px) {
+    overflow: hidden;
+  }
+  @media (max-width: 479px) {
+    padding: 50px 0 35px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__items {
+    max-width: 896px;
+    width: 100%;
+  }
+
+  &__item {
+    border-radius: 30px;
+    margin-bottom: 105px;
+    @media (max-width: 479px) {
+      margin-bottom: 80px;
+    }
+
+    &:after {
+      left: 11px;
+      top: 12px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-body {
+    background-color: $white;
+    border-radius: inherit;
+    padding: 30px;
+    border: 1px solid $template-dark;
+    position: relative;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
+  }
+
+  &__item-heading {
+    background-color: $template-yellow;
+    width: 280px;
+    border-radius: 50%;
+    font-family: $font-secondary;
+    font-size: 32px;
+    font-weight: 800;
+    position: absolute;
+    left: -50px;
+    top: -60px;
+    padding: 20px;
+    text-align: center;
+    transform: rotate(-5deg);
+    @media (max-width: 1364px) {
+      left: -15px;
+    }
+    @media (max-width: 767px) {
+      transform: rotate(-2deg);
+    }
+    @media (max-width: 479px) {
+      width: 227px;
+      font-size: 24px;
+      left: 0;
+      top: -50px;
+    }
+  }
+
+  &__item-text {
+    font-size: 20px;
+    line-height: 1.3;
+    @media (max-width: 1364px) {
+      max-width: 730px;
+    }
+    @media (max-width: 991px) {
+      font-size: 16px;
+    }
+    @media (max-width: 479px) {
+      font-size: 13px;
+    }
+  }
+
+  &__img {
+    right: -8px;
+    top: -113px;
+    z-index: 1;
+    @media (max-width: 1364px) {
+      right: -44px;
+      top: -35px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+
+    img {
+      @media (max-width: 1364px) {
+        width: 316px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.about-details {
+  padding: 55px 0 120px;
+  background-color: $white;
+  @media (max-width: 479px) {
+    padding: 35px 0 70px;
+  }
+
+  &__title {
+    @media (max-width: 1364px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 479px) {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    margin: -15px;
+    flex-wrap: wrap;
+    @media (max-width: 767px) {
+      margin: -9px;
+    }
+    @media (max-width: 479px) {
+      margin: -9px 0;
+    }
+  }
+
+  &__item {
+    flex-basis: calc(25% - 30px);
+    max-width: calc(25% - 30px);
+    border-radius: 30px;
+    margin: 15px;
+    @media (max-width: 1364px) {
+      flex-basis: calc(50% - 30px);
+      max-width: calc(50% - 30px);
+    }
+    @media (max-width: 767px) {
+      margin: 9px;
+      border-radius: 20px;
+    }
+    @media (max-width: 479px) {
+      flex-basis: 100%;
+      max-width: 100%;
+      margin: 9px 0;
+    }
+
+    &:after {
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+  &__item-body {
+    background-color: $white;
+    border-radius: inherit;
+    padding: 20px 20px 25px;
+    border: 1px solid $template-dark;
+    height: 100%;
+    @media (max-width: 767px) {
+      padding: 10px 10px 15px;
+    }
+  }
+
+  &__item-heading {
+    display: flex;
+    align-items: center;
+    background-color: $template-yellow;
+    padding: 22px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    @media (max-width: 767px) {
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    .icon-sparkle {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      fill: $template-pink;
+    }
+  }
+
+  &__item-heading-text {
+    font-family: $font-secondary;
+    font-weight: 800;
+    font-size: 28px;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+}

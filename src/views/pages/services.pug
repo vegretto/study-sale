@@ -15,10 +15,10 @@ block content
                     ._content
                         h1._title.h1 Заказать дипломную работу #[span.txt-green недорого]
                         ._text Дипломам — лучшие исполнители. Стоимость видна сразу<br>до оформления заказа в удобной онлайн-форме с детализацией заказа.
-                        form._form
+                        form._form.js-validator
                             ._form-items-wrapper.form-items-wrapper
                                 ._form-item.form-item.form-item--50.w-shadow
-                                    input(type="text" placeholder="E-mail").common-input
+                                    input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
                                 ._form-item.form-item.form-item--50.w-shadow
                                     select(name="type_work").js-search-select.js-input-required
                                         option(value="") Тип работы
@@ -832,7 +832,7 @@ block content
                                         ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
         section.subjects
             ._container.container
-                h2._title.h2 Работы #[span.txt-green по предметам]
+                h2._title.h2 Работы #[span.txt-green по&nbsp;предметам]
                 ._items-box
                     ._items.w-shadow
                         ._items-body
@@ -841,107 +841,216 @@ block content
                                     ._letter
                                         +icon('sparkle')
                                         | А
-                                    ._links
-                                        a(href="#")._link авиационная техника
-                                        a(href="#")._link автоматизация процессов
-                                        a(href="#")._link автоматика и управление
-                                        a(href="#")._link архитектура
-                                        a(href="#")._link английский язык
-                                        a(href="#")._link антикризисное управление
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link авиационная техника
+                                            a(href="#")._link автоматизация процессов
+                                            a(href="#")._link автоматика и управление
+                                            a(href="#")._link архитектура
+                                            a(href="#")._link английский язык
+                                            a(href="#")._link антикризисное управление
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | Б
-                                    ._links
-                                        a(href="#")._link базы данных
-                                        a(href="#")._link банковское дело
-                                        a(href="#")._link биржа
-                                        a(href="#")._link бухгалтерский учет
-                                        a(href="#")._link биология
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link базы данных
+                                            a(href="#")._link банковское дело
+                                            a(href="#")._link биржа
+                                            a(href="#")._link бухгалтерский учет
+                                            a(href="#")._link биология
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | В
-                                    ._links
-                                        a(href="#")._link высшая математика
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link высшая математика
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | Г
-                                    ._links
-                                        a(href="#")._link геология
-                                        a(href="#")._link геометрия
-                                        a(href="#")._link гидравлика
-                                        a(href="#")._link готовые
-                                        a(href="#")._link гражданское право
-                                        a(href="#")._link графический дизайн
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link геология
+                                            a(href="#")._link геометрия
+                                            a(href="#")._link гидравлика
+                                            a(href="#")._link готовые
+                                            a(href="#")._link гражданское право
+                                            a(href="#")._link графический дизайн
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | Д
-                                    ._links
-                                        a(href="#")._link детали машин
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link детали машин
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | Ж
-                                    ._links
-                                        a(href="#")._link журналистика
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link журналистика
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | И
-                                    ._links
-                                        a(href="#")._link инвестиции
-                                        a(href="#")._link инновационный менеджмент
-                                        a(href="#")._link информатика
-                                        a(href="#")._link информационная безопасность
-                                        a(href="#")._link информационные технологии
-                                        a(href="#")._link история
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link инвестиции
+                                            a(href="#")._link инновационный менеджмент
+                                            a(href="#")._link информатика
+                                            a(href="#")._link информационная безопасность
+                                            a(href="#")._link информационные технологии
+                                            a(href="#")._link история
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | К
-                                    ._links
-                                        a(href="#")._link конфликтология
-                                        a(href="#")._link криминалистика
-                                        a(href="#")._link культурология
-                                        a(href="#")._link корпоративный тайм менеджмент
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link конфликтология
+                                            a(href="#")._link криминалистика
+                                            a(href="#")._link культурология
+                                            a(href="#")._link корпоративный тайм менеджмент
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | Л
-                                    ._links
-                                        a(href="#")._link логистика
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link логистика
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | М
-                                    ._links
-                                        a(href="#")._link макроэкономика
-                                        a(href="#")._link маркетинг
-                                        a(href="#")._link материаловедение
-                                        a(href="#")._link математика
-                                        a(href="#")._link машиностроение
-                                        a(href="#")._link медицина
-                                        a(href="#")._link менеджмент
-                                        a(href="#")._link металлургия
-                                        a(href="#")._link метрология
-                                        a(href="#")._link механика
-                                        a(href="#")._link микроэкономика
-                                        a(href="#")._link менеджмент организации
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link макроэкономика
+                                            a(href="#")._link маркетинг
+                                            a(href="#")._link материаловедение
+                                            a(href="#")._link математика
+                                            a(href="#")._link машиностроение
+                                            a(href="#")._link медицина
+                                            a(href="#")._link менеджмент
+                                            a(href="#")._link металлургия
+                                            a(href="#")._link метрология
+                                            a(href="#")._link механика
+                                            a(href="#")._link микроэкономика
+                                            a(href="#")._link менеджмент организации
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | Н
-                                    ._links
-                                        a(href="#")._link налоги и налогообложение
-                                        a(href="#")._link нефтегазовое дело
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link налоги и налогообложение
+                                            a(href="#")._link нефтегазовое дело
                                 ._item
                                     ._letter
                                         +icon('sparkle')
                                         | О
-                                    ._links
-                                        a(href="#")._link оптотехника
-                                        a(href="#")._link организации
+                                    ._links-wrapper
+                                        ._links
+                                            a(href="#")._link оптотехника
+                                            a(href="#")._link организации
+        section.cities
+            ._container.container
+                h2._title.h2 Наши #[span.txt-pink оффлайн-офисы] во&nbsp;всех крупнейших городах&nbsp;России
+            ._items
+                ._items-line.js-cities-line
+                    ._item Челябинск
+                    ._item Воронеж
+                    ._item Волгоград
+                    ._item Омск
+                    ._item Томск
+                    ._item Москва
+                    ._item Санкт-Петербург
+                    ._item Екатеринбург
+                    ._item Казань
+                    ._item Челябинск
+                    ._item Воронеж
+                    ._item Волгоград
+                    ._item Омск
+                    ._item Томск
+            ._items
+                ._items-line.js-cities-line
+                    ._item Нижний Новгород
+                    ._item Сургут
+                    ._item Кемерово
+                    ._item Владивосток
+                    ._item Ростов-на-Дону
+                    ._item Пермь
+                    ._item Воронеж
+                    ._item Хабаровск
+                    ._item Нижний Новгород
+        section.seo
+            ._container.container
+                ._inner
+                    ._left
+                        ._seo-text
+                            h2 Профессионально
+                            p Мы гарантируем высокое качество консультаций, так как наши специалисты обладают высокой квалификацией и проходят тщательный тестовый отбор. Только 2 из 10 репетиторов приступают к консультациям.
+                            h2 Надежно
+                            p Каждый заказ, оформленный на нашей платформе, контролируется персональным менеджером. Благодаря тщательному контролю, вы гарантированно получаете качественную консультацию. Наш отдел технического контроля проверит работу на соответствие МУ, ГОСТ, антиплагиат.
+                            h2 Удобно
+                            p Вы всегда можете узнать о процессе выполнения консультации и задать вопрос в режиме "онлайн" в личном кабинете.
 
+                    ._right
+                        ._table.w-shadow
+                            ._table-body
+                                ._table-item
+                                    ._table-heading Специалист
+                                    ._table-text С опытом
+                                ._table-item
+                                    ._table-heading Гарантия
+                                    ._table-text До 6 месяцев
+                                ._table-item
+                                    ._table-heading Срок помощи
+                                    ._table-text от 2-х часов
+                                ._table-item
+                                    ._table-heading Оригинальность
+                                    ._table-text С опытом
+                                ._table-item
+                                    ._table-heading Цена
+                                    ._table-text от 2 500 руб
+                                ._table-item
+                                    ._table-heading Доработки
+                                    ._table-text Бесплатно
+                                ._table-item
+                                    ._table-heading Анонимность
+                                    ._table-text Гарантируем
+                                ._table-item
+                                    ._table-heading Кешбэк
+                                    ._table-text 10%
+        section.lead-magnet-dark.-order-now
+            ._container.container
+                .sparkle-sticker
+                    +icon('sparkle')
+                ._inner
+                    ._left
+                        h2._title.h2 Оформить #[span.txt-yellow заказ]
+                        ._text Расчёт стоимости заказа происходит сразу онлайн. После оплаты заказа 10% возвращается на счёт в личном кабинете.
+                        ._sticker.w-shadow
+                            ._sticker-body
+                                +icon('sparkle')
+                                ._sticker-text Или можно оплатить до 50% стоимости следующего заказа
+                                +icon('sparkle')
+                    ._right
+                        form._form.js-validator
+                            ._form-items-wrapper.form-items-wrapper
+                                ._form-item.form-item.w-shadow
+                                    input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
+                                ._form-item.form-item.w-shadow
+                                    select(name="type_work").js-search-select.js-input-required
+                                        option(value="") Тип работы
+                                        option(value="dissertatsija") Диссертация
+                                        option(value="diplom") Диплом
+                                        option(value="refer") Реферат
+                            button(type="submit")._submit-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Узнать стоимость
+                    ._arrow
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)

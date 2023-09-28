@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    //Подгрузка скриптов
+    function loadScript(url, callback) {
+
+        const script = document.createElement("script");
+        script.onload = function () {
+            callback();
+        };
+
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
+
     //Селекты
     const searchSelects = $(".js-search-select")
 
@@ -31,6 +43,53 @@ $(document).ready(function () {
             },
         },
     });
+
+    //Валидация форм
+    const validateInput = (input, inputValue, inputType) => {
+        let errorMessage = ''
+        if (validator.isEmpty(inputValue)) {
+            errorMessage = "Необходимо заполнить"
+            return errorMessage
+        }
+        switch (inputType) {
+            case 'email':
+                if (!validator.isEmail(inputValue)) errorMessage = 'Не похоже на e-mail'
+                break
+            default:
+                break
+        }
+        return errorMessage
+    }
+
+    const renderError = (element, errorText) => {
+        element.addClass('has-error')
+        element.next('.validation-error').remove()
+        element.after(`<div class="validation-error">${errorText}</div>`)
+        setTimeout(function () {
+            element.next('.validation-error').remove()
+        }, 5000)
+    }
+
+    const removeError = (element) => {
+        element.removeClass('has-error')
+        element.next('.validation-error').remove()
+    }
+
+    $('.js-validator').on('submit', function (e) {
+        const inputs = $(this).find('.js-input-required')
+        inputs.each(function () {
+            const inputValue = $(this).val()
+            const inputType = $(this).attr('data-validator-type')
+            const errorMessage = validateInput($(this), inputValue, inputType)
+
+            if (!validator.isEmpty(errorMessage)) {
+                e.preventDefault()
+                renderError($(this), errorMessage)
+            } else {
+                removeError($(this))
+            }
+        })
+    })
 
     //Вывод звездочек рейтинга
     $('.js-rating-stars').each(function () {
@@ -135,7 +194,7 @@ $(document).ready(function () {
     })
 
     //Аккордион
-    $('.js-accordion-toggle').on('click', function () {
+    $(document).on('click', '.js-accordion-toggle', function () {
         if (!$(this).hasClass('opened')) {
             $(this).next('.js-accordion-body').slideDown(300).addClass('opened')
             $(this).addClass('opened')
@@ -144,6 +203,12 @@ $(document).ready(function () {
             $(this).removeClass('opened')
         }
     })
+
+    //Добавляем аккордион к предметам на мобилках
+    if (screen.width < 768) {
+        $('.subjects__letter').addClass('js-accordion-toggle')
+        $('.subjects__links-wrapper').addClass('js-accordion-body')
+    }
 
     //Переключение табов
     const tabControlsWrapper = $('.js-tabs-controls')
@@ -157,6 +222,73 @@ $(document).ready(function () {
         tabsWrapper.children().removeClass('active')
         tabsWrapper.children(tabId).addClass('active')
     })
+
+    //Карта
+    const mainMap = document.getElementById('mainMap')
+
+    async function initYMap() {
+        await ymaps3.ready;
+        const {
+            YMap,
+            YMapDefaultSchemeLayer,
+            YMapDefaultFeaturesLayer,
+            YMapControls,
+        } = ymaps3;
+
+        const {YMapZoomControl} = await ymaps3.import('@yandex/ymaps3-controls@0.0.1');
+        const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-markers@0.0.1');
+
+        const map = new YMap(document.getElementById('mainMap'), {
+            location: {
+                center: [0, 0],
+                zoom: 16
+            },
+            behaviors: ['pinchZoom', 'drag']
+        });
+
+        map.addChild(new  YMapDefaultSchemeLayer());
+        map.addChild(new YMapDefaultFeaturesLayer());
+        map.addChild(new YMapControls({position: 'left'}).addChild(new YMapZoomControl()));
+
+        $.getJSON($('#mainMap').attr('data-json'), function(data) {
+            data.forEach(city => {
+                const markerContent = `<div><strong>Офис Work5</strong><div>
+                                       <div>${city.address}</div>`
+                map.addChild(new YMapDefaultMarker({
+                    coordinates: city.coords,
+                    popup: {
+                        content: markerContent,
+                        position: 'right'
+                    }
+                }));
+
+                if (city.name === "Москва") map.setLocation({center: city.coords});
+            })
+        });
+
+        function setCenter(coords) {
+            map.setLocation({center: coords, duration: 500});
+        }
+    }
+
+
+    let mapIsVisible = $(mainMap).visible(true)
+
+    const checkMapVisibility = () => {
+        mapIsVisible = $(mainMap).visible(true)
+        if (mapIsVisible) {
+            loadScript('https://api-maps.yandex.ru/v3/?apikey=b94d7ec3-5178-446e-81c0-18bb45ea93c8&lang=ru_RU',
+                initYMap)
+            window.removeEventListener('scroll', checkMapVisibility)
+        }
+    }
+
+    if (mapIsVisible) {
+        loadScript('https://api-maps.yandex.ru/v3/?apikey=b94d7ec3-5178-446e-81c0-18bb45ea93c8&lang=ru_RU',
+            initYMap)
+    } else {
+        window.addEventListener('scroll', checkMapVisibility, {passive: true});
+    }
 });
 
 

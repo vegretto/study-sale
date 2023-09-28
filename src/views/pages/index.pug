@@ -14,10 +14,10 @@ block content
                             <br>
                             | на&nbsp;помощь с&nbsp;написанием студенческих работ
                         ._text Курсовые, дипломные, практические задания и&nbsp;другие работы
-                        form._form
+                        form._form.js-validator
                             ._form-items-wrapper.form-items-wrapper
                                 ._form-item.form-item.form-item--50.w-shadow
-                                    input(type="text" placeholder="E-mail").common-input
+                                    input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
                                 ._form-item.form-item.form-item--50.w-shadow
                                     select(name="type_work").js-search-select.js-input-required
                                         option(value="") Тип работы
@@ -175,10 +175,10 @@ block content
                                 ._sticker-text Или можно оплатить до 50% стоимости следующего заказа
                                 +icon('sparkle')
                     ._right
-                        form._form
+                        form._form.js-validator
                             ._form-items-wrapper.form-items-wrapper
                                 ._form-item.form-item.w-shadow
-                                    input(type="text" placeholder="E-mail").common-input
+                                    input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
                                 ._form-item.form-item.w-shadow
                                     select(name="type_work").js-search-select.js-input-required
                                         option(value="") Тип работы
@@ -536,10 +536,10 @@ block content
                                 ._sticker-text Или можно оплатить до 50% стоимости следующего заказа
                                 +icon('sparkle')
                     ._right
-                        form._form
+                        form._form.js-validator
                             ._form-items-wrapper.form-items-wrapper
                                 ._form-item.form-item.w-shadow
-                                    input(type="text" placeholder="E-mail").common-input
+                                    input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
                                 ._form-item.form-item.w-shadow
                                     select(name="type_work").js-search-select.js-input-required
                                         option(value="") Тип работы
