@@ -1,0 +1,220 @@
+extends ../layout
+include ../mixins/mixins
+
+block content
+    .feedbacks-pg.pg-wrapper
+        section.top-page-box
+            ._container.container
+                ._inner
+                    .breadcrumbs
+                        ._items
+                            a(href="/")._item Главная
+                            ._item Отзывы
+                    h1._title Отзывы о StudySale
+            ._bg.grid-bg
+                +pictureAdaptive('top-page-box-grid', 'png', 1920, 250, 479)
+        section.feedbacks-pg-top
+            ._container.container
+                ._text Нам важно, чтобы вы приняли взвешенное решение, обращаясь за помощью. Поэтому собрали для вас честные мнения клиентов StudySale — так вы сможете оценить все плюсы и минусы и найдёте ответы на волнующие вопросы.
+                ._items
+                    ._item
+                        ._item-heading
+                            +icon('sparkle')
+                            ._item-heading-text 4.9
+                        ._item-text Средняя оценка по результатам опросов клиентов
+                    ._item
+                        ._item-heading
+                            +icon('sparkle')
+                            ._item-heading-text 8 из 10
+                        ._item-text Студентов обращаются за помощью повторно
+                    ._item
+                        ._item-heading
+                            +icon('sparkle')
+                            ._item-heading-text 96%
+                        ._item-text Клиентов оценили общение с менеджерами
+                    ._item
+                        ._item-heading
+                            +icon('sparkle')
+                            ._item-heading-text 100 000+
+                        ._item-text Выполненных работ с нашей помощью
+                ._img.abs-img
+                    +picture('feedback-pg', 'png', 251, 286)
+        section.feedbacks.-flex
+            ._container.container
+                ._title-box
+                    ._rating-items
+                        ._rating-item
+                            +icon('rating-google')
+                            ._rating-item-num 4.9
+                        ._rating-item
+                            +icon('rating-yahoo')
+                            ._rating-item-num 4.2
+                        ._rating-item
+                            +icon('rating-2gis')
+                            ._rating-item-num 4.7
+                        ._rating-item
+                            +icon('rating-yandex')
+                            ._rating-item-num 4.7
+                ._items
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-top
+                                ._item-card
+                                    ._item-avatar
+                                        +icon('avatar-ph-female')
+                                    ._item-card-box
+                                        ._item-card-name Наталья
+                                        ._item-card-stars.js-rating-stars(data-rating="4.5")
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                ._item-source
+                                    +icon('rating-google')
+                                    ._item-source-name Google
+                            ._item-text Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5!
+                            ._item-img.abs-img
+                                +icon('feedbacks1')
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-top
+                                ._item-card
+                                    ._item-avatar
+                                        +icon('avatar-ph-male')
+                                    ._item-card-box
+                                        ._item-card-name Михаил
+                                        ._item-card-stars.js-rating-stars(data-rating="5")
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                ._item-source
+                                    +icon('rating-yandex')
+                                    ._item-source-name Yandex
+                            ._item-text Решила проконсультироваться по написанию дипломной работы. Зашла на первый попавшийся сайт. Рассчитала на сайте примерную стоимость и решилась. Удовольствие недешёвое, но это лучше, чем тратить свои нервы и силы, пытаясь разобраться во всем самостоятельно, тем более времени на это абсолютно нет. После консультации работу писала неспешно. Уже показала своему научному руководителю, одобрил. Были нюансы по оформлению, но тут моя вина, у нас в вузе методичка другая.
+                            ._item-img.abs-img
+                                +icon('feedbacks2')
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-top
+                                ._item-card
+                                    ._item-avatar
+                                        +icon('avatar-ph-female')
+                                    ._item-card-box
+                                        ._item-card-name Наталья
+                                        ._item-card-stars.js-rating-stars(data-rating="4.5")
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                ._item-source
+                                    +icon('rating-google')
+                                    ._item-source-name Google
+                            ._item-text Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5! Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5!
+                            ._item-img.abs-img
+                                +icon('feedbacks3')
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-top
+                                ._item-card
+                                    ._item-avatar
+                                        +icon('avatar-ph-female')
+                                    ._item-card-box
+                                        ._item-card-name Наталья
+                                        ._item-card-stars.js-rating-stars(data-rating="4.5")
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                ._item-source
+                                    +icon('rating-google')
+                                    ._item-source-name Google
+                            ._item-text Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5!
+                            ._item-img.abs-img
+                                +icon('feedbacks1')
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-top
+                                ._item-card
+                                    ._item-avatar
+                                        +icon('avatar-ph-male')
+                                    ._item-card-box
+                                        ._item-card-name Михаил
+                                        ._item-card-stars.js-rating-stars(data-rating="5")
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                ._item-source
+                                    +icon('rating-yandex')
+                                    ._item-source-name Yandex
+                            ._item-text Решила проконсультироваться по написанию дипломной работы. Зашла на первый попавшийся сайт. Рассчитала на сайте примерную стоимость и решилась. Удовольствие недешёвое, но это лучше, чем тратить свои нервы и силы, пытаясь разобраться во всем самостоятельно, тем более времени на это абсолютно нет. После консультации работу писала неспешно. Уже показала своему научному руководителю, одобрил. Были нюансы по оформлению, но тут моя вина, у нас в вузе методичка другая.
+                            ._item-img.abs-img
+                                +icon('feedbacks2')
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-top
+                                ._item-card
+                                    ._item-avatar
+                                        +icon('avatar-ph-female')
+                                    ._item-card-box
+                                        ._item-card-name Наталья
+                                        ._item-card-stars.js-rating-stars(data-rating="4.5")
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                            ._item-card-star.js-star
+                                                +icon('rating-star')
+                                ._item-source
+                                    +icon('rating-google')
+                                    ._item-source-name Google
+                            ._item-text Уже не в первый раз обращаюсь к ребятам из StudySale. Всегда оперативно помогают. В прошлый раз помогли мне с курсовой за 2 дня. В этот раз решила обратиться за помощью с дипломом и не прогадала. Защитилась в итоге на 5!
+                            ._item-img.abs-img
+                                +icon('feedbacks3')
+        .pagination
+            ._items
+                a(href="#")._item.-left
+                    +icon('pag-arrow-left')
+                ._item.current 1
+                a(href="#")._item 2
+                a(href="#")._item 3
+                a(href="#")._item 4
+                a(href="#")._item 5
+                a(href="#")._item 6
+                a(href="#")._item.-right
+                    +icon('pag-arrow-left')

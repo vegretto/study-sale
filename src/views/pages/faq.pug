@@ -1,0 +1,326 @@
+extends ../layout
+include ../mixins/mixins
+
+block content
+    .faq-pg.pg-wrapper
+        section.top-page-box
+            ._container.container
+                ._inner
+                    .breadcrumbs
+                        ._items
+                            a(href="/")._item Главная
+                            ._item Вопросы и ответы
+                    h1._title Вопросы и ответы
+            ._bg.grid-bg
+                +pictureAdaptive('top-page-box-grid', 'png', 1920, 250, 479)
+        section.faq-pg-text
+            ._container.container
+                ._text Прежде, чем обратиться за&nbsp;помощью, клиент должен быть уверенным в&nbsp;правильности решения. Чтобы у&nbsp;клиентов StudySale не&nbsp;было сомнений, мы&nbsp;собрали ответы на&nbsp;часто задаваемые вопросы
+                ._img.abs-img
+                    +icon('faq-pg-text')
+        section.faq-tabs
+            ._container.container
+                ._controls.js-tabs-controls
+                    ._controls-item.active(data-tab="#faq1") Авторизация и безопасность
+                    ._controls-item(data-tab="#faq2") Сервис
+                    ._controls-item(data-tab="#faq3") Дополнительно
+                    ._controls-item(data-tab="#faq4") Доработки и возврат
+                    ._controls-item(data-tab="#faq5") Качество консультаций
+                    ._controls-item(data-tab="#faq6") Качество консультаций
+                    ._controls-item(data-tab="#faq7") Консультации
+                ._tabs.js-tabs
+                    ._tab.active#faq1
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Каким способом я могу оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Гарантируете ли вы конфиденциальность?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как отписаться от рассылки, которая приходит на почту?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                    ._tab#faq2
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                    ._tab#faq3
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Каким способом я могу оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Гарантируете ли вы конфиденциальность?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как отписаться от рассылки, которая приходит на почту?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                    ._tab#faq4
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                    ._tab#faq5
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Каким способом я могу оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Гарантируете ли вы конфиденциальность?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как отписаться от рассылки, которая приходит на почту?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                    ._tab#faq6
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Lorem ipsum dolor sit amet
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.
+                    ._tab#faq7
+                        ._items
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Каким способом я могу оплатить заказ?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Гарантируете ли вы конфиденциальность?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+                            ._item.w-shadow
+                                ._item-inner
+                                    ._item-head.js-accordion-toggle
+                                        ._item-question
+                                            +icon('sparkle')
+                                            ._item-question-text Как отписаться от рассылки, которая приходит на почту?
+                                        +icon('arrow-down')
+                                    ._item-body.js-accordion-body
+                                        ._item-answer Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам
+        section.lead-magnet-dark.-know-price
+            ._container.container
+                .sparkle-sticker
+                    +icon('sparkle')
+                ._inner
+                    ._left
+                        h2._title.h2 Узнайте #[span.txt-yellow стоимость] своей работы!
+                        ._text Расчёт стоимости заказа происходит сразу онлайн. После оплаты заказа 10% возвращается на счёт в личном кабинете.
+                        ._sticker.w-shadow
+                            ._sticker-body
+                                +icon('sparkle')
+                                ._sticker-text Или можно оплатить до 50% стоимости следующего заказа
+                                +icon('sparkle')
+                    ._right
+                        form._form.js-validator
+                            ._form-items-wrapper.form-items-wrapper
+                                ._form-item.form-item.w-shadow
+                                    input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
+                                ._form-item.form-item.w-shadow
+                                    select(name="type_work").js-search-select.js-input-required
+                                        option(value="") Тип работы
+                                        option(value="dissertatsija") Диссертация
+                                        option(value="diplom") Диплом
+                                        option(value="refer") Реферат
+                            button(type="submit")._submit-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Узнать стоимость
+                    ._arrow
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)

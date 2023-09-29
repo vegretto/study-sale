@@ -1310,6 +1310,53 @@ section {
   }
 }
 
+.pagination {
+  display: flex;
+  margin: 35px 0 100px;
+  @media (max-width: 479px) {
+    margin: 25px 0 80px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__item {
+    width: 48px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 1px solid $transparent;
+    border-radius: 5px;
+    @media (max-width: 479px) {
+      width: 40px;
+      height: 36px;
+    }
+
+    &.current {
+      border-color: $template-pink;
+      font-weight: 700;
+    }
+
+    &:hover {
+      border-color: $template-dark;
+    }
+
+    &--right {
+      transform: rotate(180deg);
+    }
+
+    .icon-pag-arrow-left {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
 .modal-bg {
   position: absolute;
   width: 100%;

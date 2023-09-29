@@ -1,0 +1,67 @@
+extends ../layout
+include ../mixins/mixins
+
+block content
+    .contacts-pg.pg-wrapper
+        section.top-page-box
+            ._container.container
+                ._inner
+                    .breadcrumbs
+                        ._items
+                            a(href="/")._item Главная
+                            ._item Контакты
+                    h1._title Контакты
+            ._bg.grid-bg
+                +pictureAdaptive('top-page-box-grid', 'png', 1920, 250, 479)
+        section.contacts-items
+            ._container.container
+                ._inner
+                    a(href="tel:+77079509026")._item.w-shadow
+                        ._item-body
+                            ._item-content
+                                +icon('sparkle')
+                                | +7 707 950 90 26
+                    a(href="mailto:denis54321@gmail.com")._item.w-shadow
+                        ._item-body
+                            ._item-content
+                                +icon('sparkle')
+                                | denis54321@gmail.com
+                    ._item.-socials.w-shadow
+                        ._item-body
+                            ._item-socials-box
+                                a(href="#")._item-social.-vk
+                                    +icon('vk')
+                                a(href="#")._item-social.-tg
+                                    +icon('tg')
+        section.contacts-cities
+            ._container.container
+                ._items.js-hide-some(data-max-items="10" data-items-to-show="10").js-cities-list
+        section.lead-magnet-dark.-know-price
+            ._container.container
+                .sparkle-sticker
+                    +icon('sparkle')
+                ._inner
+                    ._left
+                        h2._title.h2 Узнайте #[span.txt-yellow стоимость] своей работы!
+                        ._text Расчёт стоимости заказа происходит сразу онлайн. После оплаты заказа 10% возвращается на счёт в личном кабинете.
+                        ._sticker.w-shadow
+                            ._sticker-body
+                                +icon('sparkle')
+                                ._sticker-text Или можно оплатить до 50% стоимости следующего заказа
+                                +icon('sparkle')
+                    ._right
+                        form._form.js-validator
+                            ._form-items-wrapper.form-items-wrapper
+                                ._form-item.form-item.w-shadow
+                                    input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
+                                ._form-item.form-item.w-shadow
+                                    select(name="type_work").js-search-select.js-input-required
+                                        option(value="") Тип работы
+                                        option(value="dissertatsija") Диссертация
+                                        option(value="diplom") Диплом
+                                        option(value="refer") Реферат
+                            button(type="submit")._submit-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Узнать стоимость
+                    ._arrow
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)

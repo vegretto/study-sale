@@ -1,0 +1,87 @@
+extends ../layout
+include ../mixins/mixins
+
+block content
+    .guarantees-pg.pg-wrapper
+        section.top-page-box
+            ._container.container
+                ._inner
+                    .breadcrumbs
+                        ._items
+                            a(href="/")._item Главная
+                            ._item Гарантии
+                    h1._title Гарантии
+            ._bg.grid-bg
+                +pictureAdaptive('top-page-box-grid', 'png', 1920, 250, 479)
+        section.guarantees.-w-icons
+            ._container.container
+                ._items
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Безопасные платежи
+                            ._item-text Прием платежей осуществляется через защищенный шлюз Сбербанка. Никто не&nbsp;получит доступ к&nbsp;вашим платежным данным.
+                        ._item-img
+                            +icon('guarantees1')
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Официальный договор оферта
+                            ._item-text Формализуем наши отношения посредством договора оферты. Выдаем онлайн чек на&nbsp;почту. Печатный выдаем в офисах.
+                        ._item-img
+                            +icon('guarantees2')
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Бесплатные доработки
+                            ._item-text Преподаватель вернул работу на&nbsp;доработку? Выполним бесплатно в&nbsp;рамках первоначальных требований.
+                        ._item-img
+                            +icon('guarantees3')
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Сделаем точно в&nbsp;срок
+                            ._item-text Если что-то пойдет не&nbsp;так или&nbsp;автор заболеет, заменим исполнителя без&nbsp;приостановки выполнения работы.
+                        ._item-img
+                            +icon('guarantees4')
+                    ._item.w-shadow
+                        ._item-body
+                            ._item-heading
+                                +icon('sparkle')
+                                ._item-heading-text Оригинальная работа в&nbsp;соответствии с&nbsp;методическими указаниями
+                            ._item-text Наш отдел технического контроля проконтролирует соблюдение требований методического указания, ГОСТа и % оригинальности.
+                        ._item-img
+                            +icon('guarantees5')
+        section.lead-magnet-dark.-know-price
+            ._container.container
+                .sparkle-sticker
+                    +icon('sparkle')
+                ._inner
+                    ._left
+                        h2._title.h2 Узнайте #[span.txt-yellow стоимость] своей работы!
+                        ._text Расчёт стоимости заказа происходит сразу онлайн. После оплаты заказа 10% возвращается на счёт в личном кабинете.
+                        ._sticker.w-shadow
+                            ._sticker-body
+                                +icon('sparkle')
+                                ._sticker-text Или можно оплатить до 50% стоимости следующего заказа
+                                +icon('sparkle')
+                    ._right
+                        form._form.js-validator
+                            ._form-items-wrapper.form-items-wrapper
+                                ._form-item.form-item.w-shadow
+                                    input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
+                                ._form-item.form-item.w-shadow
+                                    select(name="type_work").js-search-select.js-input-required
+                                        option(value="") Тип работы
+                                        option(value="dissertatsija") Диссертация
+                                        option(value="diplom") Диплом
+                                        option(value="refer") Реферат
+                            button(type="submit")._submit-btn.common-btn.common-btn--pink.w-shadow
+                                .common-btn__body Узнать стоимость
+                    ._arrow
+            ._bg.grid-bg
+                +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)

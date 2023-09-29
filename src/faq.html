@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Study Sale</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles/style.min.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__inner"><a class="header__logo-wrapper" href="/">
+						<svg class="icon icon-logo">
+							<use xlink:href="img/svg/sprite.svg#logo"></use>
+						</svg>
+						<div class="header__descriptor">by work5</div></a>
+					<nav class="header__nav-menu">
+						<div class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="#">Услуги</a></div>
+						<div class="header__nav-menu-item header__nav-menu-item--dropdown"><a class="header__nav-menu-item-link" href="#">О компании</a>
+							<div class="header__nav-menu-dropdown">
+								<nav class="header__dropdown-menu"><a class="header__dropdown-menu-item" href="#">Раздел</a><a class="header__dropdown-menu-item" href="#">Длинный раздел</a><a class="header__dropdown-menu-item" href="#">Очень длинный раздел</a><a class="header__dropdown-menu-item" href="#">Очень длинный раздел</a></nav>
+							</div>
+						</div>
+						<div class="header__nav-menu-item"><a class="header__nav-menu-item-link" href="#">Отзывы</a></div>
+					</nav>
+					<div class="header__contacts-box"><a class="header__phone" href="tel:+77079509026">+7 707 950 90 26</a><a class="header__mail" href="mailto:denis54321@gmail.com">denis54321@gmail.com</a></div><a class="header__order-btn common-btn common-btn--pink w-shadow" href="#">
+						<div class="common-btn__body">Заказать</div></a>
+					<div class="header__mobile-menu-toggle js-open-mmenu">
+						<svg class="icon icon-burger">
+							<use xlink:href="img/svg/sprite.svg#burger"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="faq-pg pg-wrapper">
+			<section class="top-page-box">
+				<div class="top-page-box__container container">
+					<div class="top-page-box__inner">
+						<div class="breadcrumbs">
+							<div class="breadcrumbs__items"><a class="breadcrumbs__item" href="/">Главная</a>
+								<div class="breadcrumbs__item">Вопросы и ответы</div>
+							</div>
+						</div>
+						<h1 class="top-page-box__title">Вопросы и ответы</h1>
+					</div>
+				</div>
+				<div class="top-page-box__bg grid-bg">
+					<picture>
+						<source data-srcset="img/top-page-box-grid-sm.webp, img/top-page-box-grid-sm@2x.webp 2x" type="image/webp" media="(max-width: 479px)"/>
+						<source data-srcset="img/top-page-box-grid-sm.png, img/top-page-box-grid-sm@2x.png 2x" media="(max-width: 479px)"/>
+						<source data-srcset="img/top-page-box-grid.webp, img/top-page-box-grid@2x.webp 2x" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/top-page-box-grid.png" data-srcset="img/top-page-box-grid@2x.png 2x" alt="" width="1920" height="250"/>
+					</picture>
+				</div>
+			</section>
+			<section class="faq-pg-text">
+				<div class="faq-pg-text__container container">
+					<div class="faq-pg-text__text">Прежде, чем обратиться за&nbsp;помощью, клиент должен быть уверенным в&nbsp;правильности решения. Чтобы у&nbsp;клиентов StudySale не&nbsp;было сомнений, мы&nbsp;собрали ответы на&nbsp;часто задаваемые вопросы</div>
+					<div class="faq-pg-text__img abs-img">
+						<svg class="icon icon-faq-pg-text">
+							<use xlink:href="img/svg/sprite.svg#faq-pg-text"></use>
+						</svg>
+					</div>
+				</div>
+			</section>
+			<section class="faq-tabs">
+				<div class="faq-tabs__container container">
+					<div class="faq-tabs__controls js-tabs-controls">
+						<div class="faq-tabs__controls-item active" data-tab="#faq1">Авторизация и безопасность</div>
+						<div class="faq-tabs__controls-item" data-tab="#faq2">Сервис</div>
+						<div class="faq-tabs__controls-item" data-tab="#faq3">Дополнительно</div>
+						<div class="faq-tabs__controls-item" data-tab="#faq4">Доработки и возврат</div>
+						<div class="faq-tabs__controls-item" data-tab="#faq5">Качество консультаций</div>
+						<div class="faq-tabs__controls-item" data-tab="#faq6">Качество консультаций</div>
+						<div class="faq-tabs__controls-item" data-tab="#faq7">Консультации</div>
+					</div>
+					<div class="faq-tabs__tabs js-tabs">
+						<div class="faq-tabs__tab active" id="faq1">
+							<div class="faq-tabs__items">
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Как оплатить заказ?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Каким способом я могу оплатить заказ?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Гарантируете ли вы конфиденциальность?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Как отписаться от рассылки, которая приходит на почту?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faq-tabs__tab" id="faq2">
+							<div class="faq-tabs__items">
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faq-tabs__tab" id="faq3">
+							<div class="faq-tabs__items">
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Как оплатить заказ?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Каким способом я могу оплатить заказ?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Гарантируете ли вы конфиденциальность?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Как отписаться от рассылки, которая приходит на почту?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faq-tabs__tab" id="faq4">
+							<div class="faq-tabs__items">
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faq-tabs__tab" id="faq5">
+							<div class="faq-tabs__items">
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Как оплатить заказ?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Каким способом я могу оплатить заказ?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Гарантируете ли вы конфиденциальность?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Как отписаться от рассылки, которая приходит на почту?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faq-tabs__tab" id="faq6">
+							<div class="faq-tabs__items">
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Lorem ipsum dolor sit amet</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, ad, beatae commodi consequuntur dolore esse exercitationem laborum, libero maxime molestiae neque pariatur quaerat quia quo recusandae sed veniam vitae voluptatibus.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faq-tabs__tab" id="faq7">
+							<div class="faq-tabs__items">
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Как оплатить заказ?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Каким способом я могу оплатить заказ?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Гарантируете ли вы конфиденциальность?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+								<div class="faq-tabs__item w-shadow">
+									<div class="faq-tabs__item-inner">
+										<div class="faq-tabs__item-head js-accordion-toggle">
+											<div class="faq-tabs__item-question">
+												<svg class="icon icon-sparkle">
+													<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+												</svg>
+												<div class="faq-tabs__item-question-text">Как отписаться от рассылки, которая приходит на почту?</div>
+											</div>
+											<svg class="icon icon-arrow-down">
+												<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+											</svg>
+										</div>
+										<div class="faq-tabs__item-body js-accordion-body">
+											<div class="faq-tabs__item-answer">Ваше обращение остается полностью конфиденциальным, все ваши личные данные ни в коем случае не будут переданы третьим лицам</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="lead-magnet-dark lead-magnet-dark--know-price">
+				<div class="lead-magnet-dark__container container">
+					<div class="sparkle-sticker">
+						<svg class="icon icon-sparkle">
+							<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+						</svg>
+					</div>
+					<div class="lead-magnet-dark__inner">
+						<div class="lead-magnet-dark__left">
+							<h2 class="lead-magnet-dark__title h2">Узнайте <span class="txt-yellow">стоимость</span> своей работы!</h2>
+							<div class="lead-magnet-dark__text">Расчёт стоимости заказа происходит сразу онлайн. После оплаты заказа 10% возвращается на счёт в личном кабинете.</div>
+							<div class="lead-magnet-dark__sticker w-shadow">
+								<div class="lead-magnet-dark__sticker-body">
+									<svg class="icon icon-sparkle">
+										<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+									</svg>
+									<div class="lead-magnet-dark__sticker-text">Или можно оплатить до 50% стоимости следующего заказа</div>
+									<svg class="icon icon-sparkle">
+										<use xlink:href="img/svg/sprite.svg#sparkle"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="lead-magnet-dark__right">
+							<form class="lead-magnet-dark__form js-validator">
+								<div class="lead-magnet-dark__form-items-wrapper form-items-wrapper">
+									<div class="lead-magnet-dark__form-item form-item w-shadow">
+										<input class="common-input js-input-required" type="text" placeholder="E-mail" data-validator-type="email">
+									</div>
+									<div class="lead-magnet-dark__form-item form-item w-shadow">
+										<select class="js-search-select js-input-required" name="type_work">
+											<option value="">Тип работы</option>
+											<option value="dissertatsija">Диссертация</option>
+											<option value="diplom">Диплом</option>
+											<option value="refer">Реферат</option>
+										</select>
+									</div>
+								</div>
+								<button class="lead-magnet-dark__submit-btn common-btn common-btn--pink w-shadow" type="submit">
+									<div class="common-btn__body">Узнать стоимость</div>
+								</button>
+							</form>
+						</div>
+						<div class="lead-magnet-dark__arrow"></div>
+					</div>
+				</div>
+				<div class="lead-magnet-dark__bg grid-bg">
+					<picture>
+						<source data-srcset="img/bg-grid-sm.webp, img/bg-grid-sm@2x.webp 2x" type="image/webp" media="(max-width: 767px)"/>
+						<source data-srcset="img/bg-grid-sm.png, img/bg-grid-sm@2x.png 2x" media="(max-width: 767px)"/>
+						<source data-srcset="img/bg-grid.webp, img/bg-grid@2x.webp 2x" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/bg-grid.png" data-srcset="img/bg-grid@2x.png 2x" alt="" width="1918" height="867"/>
+					</picture>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__inner">
+					<div class="footer__col"><a class="footer__logo-wrapper" href="/">
+							<svg class="icon icon-logo">
+								<use xlink:href="img/svg/sprite.svg#logo"></use>
+							</svg>
+							<div class="footer__descriptor">by work5</div></a>
+						<div class="footer__sber">
+							<svg class="icon icon-sber-logo">
+								<use xlink:href="img/svg/sprite.svg#sber-logo"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__navs">
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Услуги</a><a class="footer__nav-item" href="#">О компании</a><a class="footer__nav-item" href="#">Отзывы</a><a class="footer__nav-item" href="#">О компании</a><a class="footer__nav-item" href="#">Отзывы</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Услуги</a><a class="footer__nav-item" href="#">О компании</a><a class="footer__nav-item" href="#">Отзывы</a><a class="footer__nav-item" href="#">О компании</a><a class="footer__nav-item" href="#">Отзывы</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Услуги</a><a class="footer__nav-item" href="#">О компании</a><a class="footer__nav-item" href="#">Отзывы</a><a class="footer__nav-item" href="#">О компании</a><a class="footer__nav-item" href="#">Отзывы</a></nav>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__contacts-box"><a class="footer__phone" href="tel:+77079509026">+7 707 950 90 26</a><a class="footer__mail" href="mailto:denis54321@gmail.com">denis54321@gmail.com</a></div>
+						<div class="footer__socials"><a class="footer__social-item footer__social-item--tg" href="#">
+								<svg class="icon icon-tg">
+									<use xlink:href="img/svg/sprite.svg#tg"></use>
+								</svg></a><a class="footer__social-item footer__social-item--vk" href="#">
+								<svg class="icon icon-vk">
+									<use xlink:href="img/svg/sprite.svg#vk"></use>
+								</svg></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bg grid-bg">
+				<picture>
+					<source data-srcset="img/bg-grid-sm.webp, img/bg-grid-sm@2x.webp 2x" type="image/webp" media="(max-width: 767px)"/>
+					<source data-srcset="img/bg-grid-sm.png, img/bg-grid-sm@2x.png 2x" media="(max-width: 767px)"/>
+					<source data-srcset="img/bg-grid.webp, img/bg-grid@2x.webp 2x" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/bg-grid.png" data-srcset="img/bg-grid@2x.png 2x" alt="" width="1918" height="867"/>
+				</picture>
+			</div>
+		</footer>
+		<div class="mobile-menu">
+			<div class="mobile-menu__body">
+				<div class="mobile-menu__close-btn js-close-mmenu">
+					<svg class="icon icon-cross">
+						<use xlink:href="img/svg/sprite.svg#cross"></use>
+					</svg>
+				</div><a class="mobile-menu__logo-wrapper" href="/">
+					<svg class="icon icon-logo-dark">
+						<use xlink:href="img/svg/sprite.svg#logo-dark"></use>
+					</svg>
+					<div class="mobile-menu__descriptor">by work5</div></a>
+				<nav class="mobile-menu__nav">
+					<div class="mobile-menu__nav-item"><a class="mobile-menu__nav-item-link" href="#">Услуги</a></div>
+					<div class="mobile-menu__nav-item mobile-menu__nav-item--dropdown">
+						<div class="mobile-menu__nav-item-body"><a class="mobile-menu__nav-item-link" href="#">О компании</a>
+							<div class="mobile-menu__nav-item-arrow js-mmenu-dd">
+								<svg class="icon icon-arrow-down">
+									<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="mobile-menu__dropdown-box">
+							<nav class="mobile-menu__nav mobile-menu__nav--dropdown">
+								<div class="mobile-menu__nav-item"><a class="mobile-menu__nav-item-link" href="#">Услуги</a></div>
+								<div class="mobile-menu__nav-item"><a class="mobile-menu__nav-item-link" href="#">Услуги</a></div>
+								<div class="mobile-menu__nav-item"><a class="mobile-menu__nav-item-link" href="#">Услуги</a></div>
+								<div class="mobile-menu__nav-item"><a class="mobile-menu__nav-item-link" href="#">Услуги</a></div>
+							</nav>
+						</div>
+					</div>
+					<div class="mobile-menu__nav-item"><a class="mobile-menu__nav-item-link" href="#">Отзывы</a></div>
+				</nav>
+				<div class="mobile-menu__contacts-box"><a class="mobile-menu__phone" href="tel:+77079509026">+7 707 950 90 26</a><a class="mobile-menu__mail" href="mailto:denis54321@gmail.com">denis54321@gmail.com</a></div>
+			</div>
+		</div>
+		<script src="scripts/vendor.min.js"></script>
+		<script src="scripts/vendor/validator.min.js"></script>
+		<script src="scripts/main.min.js"></script>
+	</body>
+</html>

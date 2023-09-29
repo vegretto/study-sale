@@ -1392,6 +1392,39 @@
     padding: 80px 0 45px;
   }
 
+  &--w-icons {
+    .guarantees {
+      &__items {
+        grid-gap: 92px 35px;
+        @media (max-width: 1364px) {
+          grid-gap: 125px 35px;
+        }
+        @media (max-width: 991px) {
+          grid-gap: 85px 35px;
+        }
+        @media (max-width: 767px) {
+          grid-gap: 65px 35px;
+        }
+        @media (max-width: 479px) {
+          grid-gap: 75px 35px;
+        }
+      }
+
+      &__item {
+        min-height: 260px;
+        @media (max-width: 991px) {
+          min-height: 200px;
+        }
+        @media (max-width: 767px) {
+          min-height: 185px;
+        }
+        @media (max-width: 479px) {
+          min-height: 210px;
+        }
+      }
+    }
+  }
+
   &__title {
     margin-bottom: 30px;
     @media(max-width: 1364px) {
@@ -1485,6 +1518,36 @@
   &__item-text {
     @media (max-width: 991px) {
       font-size: 14px;
+    }
+  }
+
+  &__item-img {
+    position: absolute;
+    z-index: 2;
+    right: 30px;
+    bottom: -85px;
+    @media (max-width: 1364px) {
+      right: 5px;
+      bottom: -110px;
+    }
+    @media (max-width: 991px) {
+      right: 10px;
+      bottom: -70px;
+    }
+    @media (max-width: 767px) {
+      bottom: -50px;
+    }
+    @media (max-width: 479px) {
+      bottom: -60px;
+    }
+
+    .icon {
+      width: 180px;
+      height: 180px;
+      @media (max-width: 991px) {
+        width: 130px;
+        height: 130px;
+      }
     }
   }
 }
@@ -1762,6 +1825,63 @@
   &__item-text {
     @media (max-width: 479px) {
       font-size: 14px;
+    }
+  }
+
+  &--flex {
+    .feedbacks {
+      &__items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin: -42px -17px;
+        @media (max-width: 991px) {
+          margin: -42px 0;
+        }
+        @media (max-width: 767px) {
+          margin: -30px 0;
+        }
+      }
+
+      &__item {
+        flex-basis: calc(50% - 34px);
+        max-width: calc(50% - 34px);
+        margin: 42px 17px;
+        @media (max-width: 991px) {
+          flex-basis: 100%;
+          max-width: 100%;
+          margin: 42px 0;
+        }
+        @media (max-width: 767px) {
+          margin: 30px 0;
+        }
+      }
+
+      &__item-body {
+        padding-bottom: 90px;
+        height: 100%;
+        @media (max-width: 767px) {
+          padding-bottom: 60px;
+        }
+      }
+
+      &__item-img {
+        right: 28px;
+        bottom: -80px;
+        @media (max-width: 767px) {
+          right: 10px;
+          bottom: -55px;
+        }
+
+        .icon {
+          width: 185px;
+          height: 185px;
+          @media (max-width: 767px) {
+            width: 115px;
+            height: 115px;
+          }
+        }
+      }
     }
   }
 }

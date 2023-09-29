@@ -97,7 +97,7 @@ $(document).ready(function () {
         if (rating === 0) return
         const stars = $(this).find('.js-star')
         stars.each(function () {
-            if ($(this).index() <= rating-1) $(this).addClass('-filled')
+            if ($(this).index() <= rating - 1) $(this).addClass('-filled')
         })
         const rounded = Math.floor(rating)
         const decimal = (rating - rounded).toFixed(1)
@@ -117,7 +117,7 @@ $(document).ready(function () {
     }
 
     const citiesSection = $('.cities')
-    window.addEventListener('scroll',function () {
+    window.addEventListener('scroll', function () {
         if (!citiesSection.visible(true)) return
         const scrollDirection = checkScrollDirection()
         $('.js-cities-line').each(function () {
@@ -246,11 +246,11 @@ $(document).ready(function () {
             behaviors: ['pinchZoom', 'drag']
         });
 
-        map.addChild(new  YMapDefaultSchemeLayer());
+        map.addChild(new YMapDefaultSchemeLayer());
         map.addChild(new YMapDefaultFeaturesLayer());
         map.addChild(new YMapControls({position: 'left'}).addChild(new YMapZoomControl()));
 
-        $.getJSON($('#mainMap').attr('data-json'), function(data) {
+        $.getJSON($('#mainMap').attr('data-json'), function (data) {
             data.forEach(city => {
                 const markerContent = `<div><strong>Офис Work5</strong><div>
                                        <div>${city.address}</div>`
@@ -288,6 +288,31 @@ $(document).ready(function () {
             initYMap)
     } else {
         window.addEventListener('scroll', checkMapVisibility, {passive: true});
+    }
+
+    //Выводит список городов из JSON на странице контактов
+    if ($('.js-cities-list').length > 0) {
+        $.getJSON('./data/contacts.json', function (data) {
+            data.forEach(city => {
+                const cityItem = `
+                <div class="contacts-cities__item w-shadow">
+                    <div class="contacts-cities__item-body">
+                        <div class="contacts-cities__item-city">
+                            <svg class="icon icon-point">
+                                <use xlink:href="img/svg/sprite.svg#point"></use>
+                            </svg>${city.name}
+                        </div>
+                        <div class="contacts-cities__item-address">${city.address}</div>
+                    </div>
+                </div>`
+
+                $('.js-cities-list').append(cityItem)
+            })
+            console.log(1);
+        })
+            .done(function () {
+                hideSome($('.js-cities-list'), 767)
+            })
     }
 });
 
