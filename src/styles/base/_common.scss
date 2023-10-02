@@ -1366,3 +1366,14 @@ section {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
+.pages-list {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+
+  a {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
