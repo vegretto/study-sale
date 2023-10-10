@@ -36,32 +36,20 @@ block content
         section.contacts-cities
             ._container.container
                 ._items.js-hide-some(data-max-items="10" data-items-to-show="10").js-cities-list
-        section.lead-magnet-dark.-know-price
+        section.lead-magnet-dark.-questions
             ._container.container
                 .sparkle-sticker
                     +icon('sparkle')
                 ._inner
-                    ._left
-                        h2._title.h2 Узнайте #[span.txt-yellow стоимость] своей работы!
-                        ._text Расчёт стоимости заказа происходит сразу онлайн. После оплаты заказа 10% возвращается на счёт в личном кабинете.
-                        ._sticker.w-shadow
-                            ._sticker-body
-                                +icon('sparkle')
-                                ._sticker-text Или можно оплатить до 50% стоимости следующего заказа
-                                +icon('sparkle')
-                    ._right
-                        form._form.js-validator
-                            ._form-items-wrapper.form-items-wrapper
-                                ._form-item.form-item.w-shadow
-                                    input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
-                                ._form-item.form-item.w-shadow
-                                    select(name="type_work").js-search-select.js-input-required
-                                        option(value="") Тип работы
-                                        option(value="dissertatsija") Диссертация
-                                        option(value="diplom") Диплом
-                                        option(value="refer") Реферат
-                            button(type="submit")._submit-btn.common-btn.common-btn--pink.w-shadow
-                                .common-btn__body Узнать стоимость
+                    h2._title.h2 Остались вопросы?
+                    ._text Наш менеджер ответит! Спрашивайте о&nbsp;чем угодно: о&nbsp;сроках выполнения работы, оплате, актуальных акциях и&nbsp;обо всем, что вам интересно.
+                    form._form.js-validator
+                        ._form-items-wrapper.form-items-wrapper
+                            ._form-item.form-item.form-item--50.w-shadow
+                                input(type="text" placeholder="E-mail" data-validator-type="email").common-input.js-input-required
+                            ._form-item.form-item.form-item--50
+                                button(type="submit")._submit-btn.common-btn.common-btn--pink.w-shadow
+                                    .common-btn__body Написать
                     ._arrow
             ._bg.grid-bg
                 +pictureAdaptive('bg-grid', 'png', 1918, 867, 767)
